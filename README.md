@@ -22,6 +22,6 @@
 ### 3.This text is for set the github init
 	1.git config --global user.name "username"
 	2.git config --global user.email example@mail.com
-	3.git remote set-url origin git@github.com:username/repo
+	3.git remote set-url origin git@github.com:username/Python_project
 
 
