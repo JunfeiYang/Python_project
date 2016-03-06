@@ -1,0 +1,82 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:		otomat-agent
+# Required-Start:	$remote_fs $syslog
+# Required-Stop:	$remote_fs $syslog
+# Default-Start:	2 3 4 5
+# Default-Stop:	    0 1 6	
+# Short-Description:	Otomat agent server
+# Description: This script will start Otomat agent as specified
+#              in  and /etc/otomat/otomat.cnf
+### END INIT INFO
+
+set -e
+
+# /etc/init.d/otomat-agent-server: start and stop the OpenBSD "secure shell(tm)" daemon
+
+test $DEBIAN_SCRIPT_DEBUG && set -v -x
+umask 022
+
+
+. /lib/lsb/init-functions
+DAEMON=/usr/bin/otomat-agent
+DESC="otomat agent server daemon(s)"
+CONFIG_DIR=/etc/otomat
+CONFIG_FILE=${CONFIG_DIR}/otomat.cnf
+PID=`ps aux |grep otomat-agent |grep -v grep|awk '{print $2}'`
+test -x $DAEMON || exit 0
+test -d $CONFIG_DIR || exit 0
+test -f $CONFIG_FILE || exit 0
+
+
+export PATH="${PATH:+$PATH:}/usr/bin:/bin"
+                     
+
+case "$1" in
+  start)
+	log_daemon_msg "Starting Otomat-agent  server" "otomat" || true
+        if [ ! -f /var/run/otomat-agent.pid ];then
+           touch /var/run/otomat-agent.pid
+	fi
+	/usr/bin/otomat-agent  /etc/otomat/otomat.cnf & < /dev/null || STATUS=0
+        for i in $PID
+ 	do
+ 	   echo $i >> /var/run/otomat-agent.pid
+	done
+	log_end_msg 0 || true
+	;;
+  stop)
+	log_daemon_msg "Stopping Otomat server" "otomat" || true
+	start-stop-daemon --stop --quiet --oknodo \
+        --pidfile /var/run/otomat-agent.pid && rm -f /var/run/otomat-agent.pid
+	log_end_msg 0 || true
+	;;
+
+  restart)
+	log_daemon_msg "Restarting Otomat-agent server" "otomat" || true
+	start-stop-daemon --stop --quiet --oknodo \
+	 --pidfile /var/run/otomat-agent.pid && rm -f /var/run/otomat-agent.pid  
+	# old daemon stopped
+	if [ ! -f /var/run/otomat-agent.pid ];then
+	  touch /var/run/otomat-agent.pid
+	fi
+	/usr/bin/otomat-agent /etc/otomat/otomat.cnf &    < /dev/null || STATUS=0 
+        for i in $PID
+ 	do
+ 	   echo $i >> /var/run/otomat-agent.pid
+	done
+	log_end_msg 0 || true
+	;;
+
+  status)
+	#check_for_upstart 1
+	status_of_proc -p /var/run/otomat-agent.pid /usr/bin/otomat-agent  otomat && exit 0 || exit $?
+	;;
+
+  *)
+	log_action_msg "Usage: /etc/init.d/otomat-agent-server {start|stop|restart|status}" || true
+	exit 1
+esac
+
+exit 0

@@ -1,0 +1,7 @@
+dn: cn=andre,ou=Group,dc=che001,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: andre
+userPassword: {crypt}x
+gidNumber: 503
+

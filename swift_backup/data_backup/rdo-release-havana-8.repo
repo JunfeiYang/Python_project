@@ -1,0 +1,6 @@
+
+[repos.fedorapeople.org_repos_openstack_openstack-havana_rdo-release-havana-8.noarch.rpm]
+name=added from: http://repos.fedorapeople.org/repos/openstack/openstack-havana/rdo-release-havana-8.noarch.rpm
+baseurl=http://repos.fedorapeople.org/repos/openstack/openstack-havana/rdo-release-havana-8.noarch.rpm
+enabled=0
+

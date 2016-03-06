@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/yoyosyssvn/!svn/ver/54336/src/java/auto-test/platform/cpn
+END
+cmd_config.py.sample
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/yoyosyssvn/!svn/ver/52915/src/java/auto-test/platform/cpn/cmd_config.py.sample
+END
+query_cmd.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/yoyosyssvn/!svn/ver/52470/src/java/auto-test/platform/cpn/query_cmd.py
+END
+stop_cmd.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/yoyosyssvn/!svn/ver/52470/src/java/auto-test/platform/cpn/stop_cmd.py
+END
+auto_test_cpn.vsd
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/yoyosyssvn/!svn/ver/52918/src/java/auto-test/platform/cpn/auto_test_cpn.vsd
+END
+test_spec_example.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/yoyosyssvn/!svn/ver/53910/src/java/auto-test/platform/cpn/test_spec_example.xml
+END
+auto_test_cpn.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/yoyosyssvn/!svn/ver/54336/src/java/auto-test/platform/cpn/auto_test_cpn.xml
+END
+do_case_job.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/yoyosyssvn/!svn/ver/53910/src/java/auto-test/platform/cpn/do_case_job.xml
+END
+start_cmd.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/yoyosyssvn/!svn/ver/52916/src/java/auto-test/platform/cpn/start_cmd.py
+END
+install_software_job.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/yoyosyssvn/!svn/ver/52917/src/java/auto-test/platform/cpn/install_software_job.xml
+END
+auto_test_cpn.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/yoyosyssvn/!svn/ver/54177/src/java/auto-test/platform/cpn/auto_test_cpn.png
+END

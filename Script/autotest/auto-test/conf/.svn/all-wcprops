@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/yoyosyssvn/!svn/ver/42544/src/java/auto-test/conf
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/yoyosyssvn/!svn/ver/42544/src/java/auto-test/conf/log4j.properties
+END
+checkstyle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/yoyosyssvn/!svn/ver/41486/src/java/auto-test/conf/checkstyle.xml
+END
+TestServer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/yoyosyssvn/!svn/ver/42544/src/java/auto-test/conf/TestServer.xml
+END

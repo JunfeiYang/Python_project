@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/yoyosyssvn/!svn/ver/43768/src/java/auto-test/src/com/yoyosys/test/bitsflow
+END
+BitsflowComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/yoyosyssvn/!svn/ver/43768/src/java/auto-test/src/com/yoyosys/test/bitsflow/BitsflowComm.java
+END
+TestBitsflowGroupClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/yoyosyssvn/!svn/ver/43538/src/java/auto-test/src/com/yoyosys/test/bitsflow/TestBitsflowGroupClient.java
+END
+TestBitsflowPubSubClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/yoyosyssvn/!svn/ver/43538/src/java/auto-test/src/com/yoyosys/test/bitsflow/TestBitsflowPubSubClient.java
+END

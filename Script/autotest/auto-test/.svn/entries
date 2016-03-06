@@ -1,0 +1,89 @@
+10
+
+dir
+85330
+https://yoyosyssvn/svn/yoyosyssvn/src/java/auto-test
+https://yoyosyssvn/svn/yoyosyssvn
+
+
+
+2013-04-27T09:40:40.140214Z
+85263
+tong.gang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d35ef2fe-8d1b-4a4d-9a06-fc749a09e725
+
+
+
+
+
+
+
+
+()
+
+src
+dir
+
+bin
+dir
+
+newtools
+dir
+
+build.xml
+file
+
+
+
+
+2013-05-03T06:34:39.480274Z
+28eac38866637fc74c29c26e8d69569f
+2011-12-11T14:53:59.065253Z
+42211
+zhang.tao
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1249
+
+platform
+dir
+
+conf
+dir
+
+lib
+dir
+

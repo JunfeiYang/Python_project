@@ -1,0 +1,46 @@
+#!/usr/bin/python
+#_*_ coding:UTF-8 _*_
+
+import sys,os
+reload(sys)
+sys.setdefaultencoding('utf8')
+import ConfigParser
+
+class tenant_conf:
+	def __init__(self,filename):
+		self.filename = filename
+		self.config = ConfigParser.ConfigParser()
+		self.config.read(self.filename)
+		s=self.config.sections()
+	def kyprivate_url(self):
+		s_url = self.config.get("kyprivate","OS_AUTH_URL")
+		return s_url
+        def kyprivate_id(self):
+		s_id = self.config.get("kyprivate","OS_TENANT_ID")
+		return s_id
+	def kyprivate_name(self):
+		s_name = self.config.get("kyprivate","OS_TENANT_NAME")
+		return s_name
+	def kyprivate_username(self):
+		s_username = self.config.get("kyprivate","OS_USERNAME")
+		return s_username
+	def kyprivate_passwd(self):
+		s_passwd = self.config.get("kyprivate","OS_PASSWORD")
+		return s_passwd
+	##############################  
+	def kycloudprod_url(self):
+		s_url = self.config.get("kycloudprod","OS_AUTH_URL")
+		return s_url
+        def kycloudprod_id(self):
+		s_id = self.config.get("kycloudprod","OS_TENANT_ID")
+		return s_id
+	def kycloudprod_name(self):
+		s_name = self.config.get("kycloudprod","OS_TENANT_NAME")
+		return s_name
+	def kycloudprod_username(self):
+		s_username = self.config.get("kycloudprod","OS_USERNAME")
+		return s_username
+	def kycloudprod_passwd(self):
+		s_passwd = self.config.get("kycloudprod","OS_PASSWORD")
+		return s_passwd
+	   

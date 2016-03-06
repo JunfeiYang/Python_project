@@ -1,0 +1,330 @@
+Jul 29 02:23:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 02:23:44 Yangjunfe WindowServer[79]: CGXSetWindowBackgroundBlurRadius: Invalid window 0xffffffff
+Jul 29 02:23:44 Yangjunfe WindowServer[79]: Created shield window 0x5ff for display 0x04273140
+Jul 29 02:23:44 Yangjunfe WindowServer[79]: device_generate_desktop_screenshot: authw 0x7f9192a348c0(2000), shield 0x7f9191646ef0(2001)
+Jul 29 02:23:44 Yangjunfe WindowServer[79]: device_generate_lock_screen_screenshot: authw 0x7f9192a348c0(2000), shield 0x7f9191646ef0(2001)
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: releasing authw 0x7f9192a348c0(2000), shield 0x7f9191646ef0(2001), lock state 3
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: err 0x0
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: Created shield window 0x601 for display 0x003f003d
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: releasing authw 0x7f9192a348c0(2002), shield 0x7f9191646ef0(2001), lock state 3
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: err 0x0
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: Created shield window 0x602 for display 0x003f003e
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: releasing authw 0x7f9192a348c0(2002), shield 0x7f9191646ef0(2001), lock state 3
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: err 0x0
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: Created shield window 0x603 for display 0x003f003f
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: releasing authw 0x7f9192a348c0(2002), shield 0x7f9191646ef0(2001), lock state 3
+Jul 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: err 0x0
+Jul 29 06:07:26 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 06:07:27 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 06:07:27 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 06:07:27 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 06:07:28 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 06:07:28 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 06:39:58 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 06:39:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 06:39:59 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 07:36:32 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 07:36:32 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:30:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:30:30 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:32:43 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:32:57 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:33:21 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:33:21 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:34:14 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:34:14 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:35:21 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:35:26 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:35:26 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:35:27 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:35:31 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:35:37 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:35:37 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:37:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:38:00 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:38:07 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:38:58 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:38:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:39:00 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:39:00 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:39:01 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:39:15 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:39:15 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:39:49 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:39:50 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:42:12 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:42:13 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:43:37 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:43:57 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:44:34 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:45:36 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:45:50 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:45:50 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:45:50 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:45:56 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:45:56 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:49:42 Yangjunfe WindowServer[79]: _CGXSetWindowHasMainAppearance: Operation on a window 0x746 requiring rights kCGSWindowRightOwner by caller 文本编辑
+Jul 29 09:49:48 Yangjunfe WindowServer[79]: _CGXSetWindowHasMainAppearance: Operation on a window 0x746 requiring rights kCGSWindowRightOwner by caller 文本编辑
+Jul 29 09:52:05 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:54:12 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:54:14 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:54:14 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:54:55 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:54:56 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:55:33 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:55:33 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:56:15 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:56:16 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:58:29 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:58:29 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:58:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:58:31 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:58:53 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:58:53 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:58:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:58:59 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:58:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:00 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:59:17 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:17 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:59:17 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:18 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:59:20 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:20 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:59:20 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:21 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:59:28 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:28 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:59:28 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:29 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:59:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:44 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 09:59:45 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 09:59:45 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:00:15 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:01:48 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:01:48 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:01:51 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:01:52 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:03:12 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:03:12 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:03:12 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:03:13 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:03:21 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:03:21 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:03:21 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:03:22 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:03:35 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:03:35 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:03:56 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:03:57 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:04:06 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:04:06 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:04:07 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:04:07 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:05:09 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:05:09 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:05:10 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:09:58 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:10:02 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:10:02 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:14:28 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:14:28 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:14:55 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:14:55 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:14:55 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:14:56 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:15:26 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:15:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:15:30 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:15:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:15:31 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:15:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:15:44 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:15:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:15:45 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:18:39 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:18:39 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:18:39 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:18:40 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:18:50 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:18:50 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:18:51 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:18:52 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:22:18 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:22:19 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:22:19 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:22:19 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:22:29 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:22:29 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+Jul 29 10:22:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+Jul 29 10:22:30 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 02:23:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 02:23:44 Yangjunfe WindowServer[79]: CGXSetWindowBackgroundBlurRadius: Invalid window 0xffffffff
+ 29 02:23:44 Yangjunfe WindowServer[79]: Created shield window 0x5ff for display 0x04273140
+ 29 02:23:44 Yangjunfe WindowServer[79]: device_generate_desktop_screenshot: authw 0x7f9192a348c0(2000), shield 0x7f9191646ef0(2001)
+ 29 02:23:44 Yangjunfe WindowServer[79]: device_generate_lock_screen_screenshot: authw 0x7f9192a348c0(2000), shield 0x7f9191646ef0(2001)
+ 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: releasing authw 0x7f9192a348c0(2000), shield 0x7f9191646ef0(2001), lock state 3
+ 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: err 0x0
+ 29 06:06:55 Yangjunfe WindowServer[79]: Created shield window 0x601 for display 0x003f003d
+ 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: releasing authw 0x7f9192a348c0(2002), shield 0x7f9191646ef0(2001), lock state 3
+ 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: err 0x0
+ 29 06:06:55 Yangjunfe WindowServer[79]: Created shield window 0x602 for display 0x003f003e
+ 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: releasing authw 0x7f9192a348c0(2002), shield 0x7f9191646ef0(2001), lock state 3
+ 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: err 0x0
+ 29 06:06:55 Yangjunfe WindowServer[79]: Created shield window 0x603 for display 0x003f003f
+ 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: releasing authw 0x7f9192a348c0(2002), shield 0x7f9191646ef0(2001), lock state 3
+ 29 06:06:55 Yangjunfe WindowServer[79]: handle_will_sleep_auth_and_shield_windows: err 0x0
+ 29 06:07:26 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 06:07:27 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 06:07:27 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 06:07:27 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 06:07:28 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 06:07:28 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 06:39:58 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 06:39:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 06:39:59 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 07:36:32 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 07:36:32 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:30:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:30:30 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:32:43 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:32:57 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:33:21 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:33:21 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:34:14 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:34:14 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:35:21 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:35:26 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:35:26 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:35:27 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:35:31 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:35:37 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:35:37 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:37:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:38:00 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:38:07 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:38:58 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:38:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:39:00 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:39:00 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:39:01 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:39:15 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:39:15 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:39:49 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:39:50 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:42:12 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:42:13 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:43:37 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:43:57 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:44:34 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:45:36 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:45:50 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:45:50 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:45:50 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:45:56 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:45:56 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:49:42 Yangjunfe WindowServer[79]: _CGXSetWindowHasMainAppearance: Operation on a window 0x746 requiring rights kCGSWindowRightOwner by caller 文本编辑
+ 29 09:49:48 Yangjunfe WindowServer[79]: _CGXSetWindowHasMainAppearance: Operation on a window 0x746 requiring rights kCGSWindowRightOwner by caller 文本编辑
+ 29 09:52:05 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:54:12 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:54:14 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:54:14 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:54:55 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:54:56 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:55:33 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:55:33 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:56:15 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:56:16 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:58:29 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:58:29 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:58:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:58:31 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:58:53 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:58:53 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:58:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:58:59 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:58:59 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:00 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:59:17 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:17 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:59:17 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:18 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:59:20 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:20 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:59:20 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:21 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:59:28 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:28 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:59:28 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:29 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:59:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:44 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 09:59:45 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 09:59:45 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:00:15 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:01:48 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:01:48 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:01:51 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:01:52 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:03:12 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:03:12 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:03:12 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:03:13 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:03:21 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:03:21 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:03:21 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:03:22 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:03:35 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:03:35 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:03:56 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:03:57 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:04:06 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:04:06 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:04:07 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:04:07 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:05:09 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:05:09 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:05:10 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:09:58 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:10:02 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:10:02 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:14:28 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:14:28 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:14:55 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:14:55 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:14:55 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:14:56 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:15:26 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:15:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:15:30 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:15:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:15:31 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:15:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:15:44 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:15:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:15:45 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:18:39 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:18:39 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:18:39 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:18:40 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:18:50 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:18:50 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:18:51 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:18:52 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:22:18 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:22:19 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:22:19 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:22:19 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:22:29 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:22:29 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:22:30 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:22:30 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:25:31 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:25:31 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:25:31 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:25:32 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:25:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:25:44 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered
+ 29 10:25:44 Yangjunfe WindowServer[79]: MPAccessSurfaceForDisplayDevice: Set up page flip mode on display 0x04273140 device: 0x10ce73b90  isBackBuffered: 1 numComp: 3 numDisp: 3
+ 29 10:25:45 Yangjunfe WindowServer[79]: CGXRegisterWindowWithSystemStatusBar: window 12 already registered

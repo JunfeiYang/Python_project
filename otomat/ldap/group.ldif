@@ -1,0 +1,6 @@
+dn: cn=admin,ou=Group,dc=che001,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: testuser
+userPassword: {crypt}x
+gidNumber: 1000

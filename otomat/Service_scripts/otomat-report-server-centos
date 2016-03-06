@@ -1,0 +1,106 @@
+#!/bin/bash
+#
+# Otomat  
+#
+# chkconfig:   - 93 02
+# description: otomat provides 
+#		
+### END INIT INFO
+
+. /etc/rc.d/init.d/functions
+
+prog=otomat_report
+exec="/usr/bin/otomat_report_server"
+configs=(
+    "/etc/otomat/otomat.cnf" 
+)
+pidfile="/var/run/$prog/$prog.pid"
+logfile="/var/log/otomat-server/otomat-report.log"
+
+if [ ! -d /var/run/otomat_report ];then
+   mkdir /var/run/otomat_report
+elif [ ! -d /var/log/$prog ];then
+   mkdir /var/log/$prog
+elif [ ! -f $logfile ];then
+    touch $logfile
+fi
+
+
+
+lockfile=/var/lock/subsys/$prog-server
+
+start() {
+    [ -x $exec ] || exit 5
+    for config in ${configs[@]}; do
+        [ -f $config ] || exit 6
+    done
+    echo -n $"Starting $prog: "
+    daemon  --pidfile $pidfile "$exec ${configs[@]/#/--config-file }  &>/dev/null & echo \$! > $pidfile"
+    retval=$?
+    echo
+    [ $retval -eq 0 ] && touch $lockfile
+    return $retval
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc -p $pidfile $prog
+    retval=$?
+    echo
+    [ $retval -eq 0 ] && rm -f $lockfile 
+    return $retval
+}
+
+restart() {
+    stop
+    start
+}
+
+reload() {
+    restart
+}
+
+force_reload() {
+    restart
+}
+
+rh_status() {
+    status -p $pidfile $prog
+}
+
+rh_status_q() {
+    rh_status >/dev/null 2>&1
+}
+
+
+case "$1" in
+    start)
+        #rh_status_q && exit 0
+        start
+        ;;
+    stop)
+       # rh_status_q || exit 0
+        stop
+        ;;
+    restart)
+        restart
+        ;;
+    reload)
+        #rh_status_q || exit 7
+        reload
+        ;;
+    force-reload)
+        force_reload
+        ;;
+    status)
+        rh_status
+        ;;
+    condrestart|try-restart)
+        #rh_status_q || exit 0
+        restart
+        ;;
+    *)
+        echo $"Usage: $0 {start|stop|status|restart|condrestart|try-restart|reload|force-reload}"
+        exit 2
+esac
+exit $?

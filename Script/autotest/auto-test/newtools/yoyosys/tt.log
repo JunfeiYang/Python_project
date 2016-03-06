@@ -1,0 +1,583 @@
+Script started on 2013年05月07日 星期二 17时22分42秒
+]0;libin@libin-ThinkPad-T420: ~/workspace/yoyo-netvm/auto-test/newtools/yoyosyslibin@libin-ThinkPad-T420:~/workspace/yoyo-netvm/auto-test/newtools/yoyosys$ ./DataCellTest.py 
+load config module: config
+load config module: config
+create connection to 172.16.236.24 successful.
+create connection to 172.16.236.26 successful.
+create connection to 172.16.236.10 successful.
+create connection to 172.16.236.31 successful.
+create connection to 172.16.236.17 successful.
+create connection to 172.16.236.19 successful.
+create connection to 172.16.236.20 successful.
+Welcome to yoyo-shell, please use 'help' to show all commands!
+
+Follow me to install DataCell:
+  1) prepare yoyopkg-xxx-noarch.tar.gz
+  2) run 'installYoyopkg /yoyopkg_path/yoyopkg-xxx-noarch.tar.gz'
+  3) run 'yoyopkg install --tag DATACELL_BLEEDING_EDGE'
+  4) prepare agent.xml.sample, groupd.xml.sample and yoyo.lic in current path
+  5) run 'configBitsflow agent.xml.sample yoyo.lic'
+  6) run 'configGroupd groupd.xml.sample'
+  7) run 'startAgent'
+  8) run 'startGroupd'
+  9) prepare DataCell.xml.sample in current path
+ 10) run 'configDataCell DataCell.xml.sample'
+ 11) run 'startDataCell'
+ 12) run 'ps' (show DataCell process)
+ 13) run 'getBitsflowLog' (download Bitsflow logs from all nodes)
+ 14) run 'getDataCellLog' (download DataCell logs from all nodes)
+
+[yoyo-sh]> serialCmd ls -la /home/datacellbug/
+======== target: 172.16.236.24 ========
+总用量 1098676
+drwxr-xr-x. 27 root root      4096 5月   7 16:05 .
+drwxr-xr-x. 11 root root      4096 5月   7 11:04 ..
+-rw-r--r--   1 root root     11529 5月   7 14:16 bug04171622agent.tar.bz2
+-rw-r--r--   1 root root  29617704 5月   7 14:16 bug04171622.tar.bz2
+-rw-r--r--   1 root root   3595236 5月   7 14:16 bug04181529.tar.bz2
+-rw-r--r--   1 root root  33380119 5月   7 14:28 bug04181629.tar.bz2
+-rw-r--r--   1 root root  15852806 5月   7 14:30 bug04181709.tar.bz2
+-rw-r--r--   1 root root  18805143 5月   7 14:33 bug04181731.tar.bz2
+-rw-r--r--   1 root root 596578544 5月   7 15:52 bug04191514.tar.bz2
+-rw-r--r--   1 root root  50407233 5月   7 16:00 bug04191537.tar.bz2
+-rw-r--r--   1 root root  39507128 5月   7 16:05 bug04191644.tar.bz2
+-rw-r--r--.  1 root root  23986558 4月  21 15:19 bug04191724.tar.bz2
+drwxr-xr-x.  2 root root      4096 4月  22 09:32 bug04220920
+-rw-r--r--   1 root root 281739264 5月   7 17:19 bug04220920.tar.bz2
+drwxr-xr-x.  4 root root      4096 4月  22 09:22 bug04220920_volume
+drwxr-xr-x.  2 root root      4096 4月  22 14:16 bug04221415
+-rw-r--r--.  1 root root  31408432 4月  22 14:38 bug04221415.tar.bz2
+drwxr-xr-x.  5 root root      4096 4月  22 14:16 bug04221415_volume
+drwxr-xr-x.  2 root root      4096 4月  24 11:31 bug04241130
+drwxr-xr-x.  2 root root      4096 4月  24 14:13 bug04241346
+drwxr-xr-x.  2 root root      4096 4月  24 15:20 bug04241516
+drwxr-xr-x.  2 root root      4096 4月  24 15:30 bug04241528
+drwxr-xr-x.  5 root root      4096 4月  24 15:38 bug04241528_volume
+drwxr-xr-x.  2 root root      4096 4月  24 15:51 bug04241551
+drwxr-xr-x.  2 root root      4096 4月  24 18:24 bug04241824
+drwxr-xr-x.  5 root root      4096 4月  24 18:25 bug04241824_volume
+drwxr-xr-x.  2 root root      4096 4月  27 13:34 bug04271334
+drwxr-xr-x.  2 root root      4096 4月  27 16:58 bug04271655
+drwxr-xr-x.  2 root root      4096 4月  27 20:02 bug04271733
+drwxr-xr-x.  5 root root      4096 4月  27 17:36 bug04271733_volume
+drwxr-xr-x.  2 root root      4096 5月   2 13:45 bug05021345
+drwxr-xr-x.  2 root root      4096 5月   2 16:05 bug05021605
+drwxr-xr-x.  5 root root      4096 5月   2 16:16 bug05021605_volume
+drwxr-xr-x   5 root root      4096 5月   6 15:57 bug05061555
+drwxr-xr-x   2 root root      4096 5月   6 16:11 bug05061555_log
+drwxr-xr-x   2 root root      4096 5月   7 10:58 bug5071058
+drwxr-xr-x   5 root root      4096 5月   7 10:58 bug5071058_volume
+drwxr-xr-x.  2 root root      4096 5月   3 17:02 but05031659
+drwxr-xr-x.  2 root root      4096 5月   3 17:13 but05031659_volume
+======== end ========
+
+======== target: 172.16.236.26 ========
+总用量 1022396
+drwxr-xr-x. 27 root root      4096 5月   7 15:01 .
+drwxr-xr-x. 11 root root      4096 5月   7 11:04 ..
+-rw-r--r--   1 root root   3420854 5月   7 14:02 bug04181529.tar.bz2
+-rw-r--r--   1 root root  34283684 5月   7 14:14 bug04181629.tar.bz2
+-rw-r--r--   1 root root  15070735 5月   7 14:16 bug04181709.tar.bz2
+-rw-r--r--   1 root root  15245544 5月   7 14:18 bug04181731.tar.bz2
+-rw-r--r--   1 root root 221450371 5月   7 14:49 bug04191514.tar.bz2
+-rw-r--r--   1 root root  49043773 5月   7 14:57 bug04191537.tar.bz2
+-rw-r--r--   1 root root  35820959 5月   7 15:01 bug04191644.tar.bz2
+-rw-r--r--   1 root root  26409702 4月  21 15:20 bug04191724.tar.bz2
+drwxr-xr-x   2 root root      4096 4月  22 09:36 bug04220920
+-rw-r--r--   1 root root 645185536 5月   7 17:19 bug04220920.tar.bz2
+drwxr-xr-x   4 root root      4096 4月  22 09:22 bug04220920_volume
+drwxr-xr-x   2 root root      4096 4月  22 14:16 bug04221415
+-rw-r--r--   1 root root    857015 4月  22 14:35 bug04221415.tar.bz2
+drwxr-xr-x   5 root root      4096 4月  22 14:16 bug04221415_volume
+drwxr-xr-x   2 root root      4096 4月  24 11:31 bug04241130
+drwxr-xr-x   2 root root      4096 4月  24 14:15 bug04241346
+drwxr-xr-x   2 root root      4096 4月  24 15:20 bug04241516
+drwxr-xr-x   2 root root      4096 4月  24 15:29 bug04241528
+drwxr-xr-x   5 root root      4096 4月  24 15:38 bug04241528_volume
+drwxr-xr-x   2 root root      4096 4月  24 15:51 bug04241551
+drwxr-xr-x   2 root root      4096 4月  24 18:24 bug04241824
+drwxr-xr-x   5 root root      4096 4月  24 18:25 bug04241824_volume
+drwxr-xr-x   2 root root      4096 4月  27 13:34 bug04271334
+drwxr-xr-x   2 root root      4096 4月  27 16:58 bug04271655
+drwxr-xr-x   2 root root      4096 4月  27 19:59 bug04271733
+drwxr-xr-x   5 root root      4096 4月  27 17:36 bug04271733_volume
+drwxr-xr-x   2 root root      4096 5月   2 13:45 bug05021345
+drwxr-xr-x   2 root root      4096 5月   2 22:47 bug05021605
+drwxr-xr-x   5 root root      4096 5月   2 16:16 bug05021605_volume
+drwxr-xr-x   5 root root      4096 5月   6 15:57 bug05061555
+drwxr-xr-x   2 root root      4096 5月   6 16:11 bug05061555_log
+drwxr-xr-x   2 root root      4096 5月   7 10:58 bug5071058
+drwxr-xr-x   5 root root      4096 5月   7 10:58 bug5071058_volume
+drwxr-xr-x   2 root root      4096 5月   3 16:59 but05031659
+drwxr-xr-x   2 root root      4096 5月   3 17:10 but05031659_volume
+======== end ========
+
+======== target: 172.16.236.10 ========
+total 1024728
+drwxr-xr-x  29 root root      4096 May  7 14:49 .
+drwxr-xr-x. 17 root root      4096 May  7 11:09 ..
+-rw-r--r--   1 root root 177449387 May  7 14:39 bug04191514.tar.bz2
+-rw-r--r--   1 root root  48161663 May  7 14:46 bug04191537.tar.bz2
+-rw-r--r--   1 root root  20852503 May  7 14:49 bug04191644.tar.bz2
+-rw-r--r--   1 root root  14585440 Apr 21 15:25 bug04191724.tar.bz2
+drwxr-xr-x   2 root root      4096 Apr 22 14:03 bug04220920
+-rw-r--r--   1 root root 757649408 May  7 17:24 bug04220920.tar.bz2
+drwxr-xr-x   4 root root      4096 Apr 22 09:26 bug04220920_volume
+drwxr-xr-x   2 root root      4096 Apr 22 14:20 bug04221415
+-rw-r--r--   1 root root  30489896 Apr 22 14:42 bug04221415.tar.bz2
+drwxr-xr-x   5 root root      4096 Apr 22 14:20 bug04221415_volume
+drwxr-xr-x   2 root root      4096 Apr 24 11:34 bug04241130
+drwxr-xr-x   2 root root      4096 Apr 26 23:09 bug04241346
+drwxr-xr-x   2 root root      4096 Apr 24 15:22 bug04241516
+drwxr-xr-x   2 root root      4096 Apr 24 15:32 bug04241528
+drwxr-xr-x   5 root root      4096 Apr 24 15:41 bug04241528_volume
+drwxr-xr-x   2 root root      4096 Apr 24 15:55 bug04241551
+drwxr-xr-x   2 root root      4096 Apr 24 18:28 bug04241824
+drwxr-xr-x   5 root root      4096 Apr 24 18:28 bug04241824_volume
+drwxr-xr-x   2 root root      4096 Apr 27 13:38 bug04271334
+drwxr-xr-x   2 root root      4096 Apr 27 17:02 bug04271655
+drwxr-xr-x   2 root root      4096 Apr 27 21:39 bug04271733
+drwxr-xr-x   5 root root      4096 Apr 27 17:40 bug04271733_volume
+drwxr-xr-x   2 root root      4096 May  2 13:50 bug05021345
+drwxr-xr-x   3 root root      4096 May  6 12:11 bug05021605
+drwxr-xr-x   5 root root      4096 May  2 16:21 bug05021605_volume
+drwxr-xr-x   2 root root      4096 May  6 16:02 bug05061544
+drwxr-xr-x   5 root root      4096 May  6 16:02 bug05061555
+drwxr-xr-x   2 root root      4096 May  6 16:51 bug05061555_log
+drwxr-xr-x   2 root root      4096 May  7 11:03 bug5071058
+drwxr-xr-x   5 root root      4096 May  7 11:03 bug5071058_volume
+drwxr-xr-x   2 root root      4096 May  3 17:08 but05031659
+drwxr-xr-x   2 root root      4096 May  3 17:16 but05031659_volume
+drwxr-xr-x   3 root root      4096 May  3 17:46 home
+======== end ========
+
+======== target: 172.16.236.31 ========
+total 816028
+drwxr-xr-x  28 root root      4096 May  7 14:53 .
+drwxr-xr-x. 21 root root      4096 May  7 11:04 ..
+-rw-r--r--   1 root root    189561 May  7 14:01 bug04091424.tar.bz2
+-rw-r--r--   1 root root     76830 May  7 14:01 bug04101513.tar.bz2
+-rw-r--r--   1 root root     96609 May  7 14:01 bug04101823.tar.bz2
+-rw-r--r--   1 root root     37075 May  7 14:01 bug04121905.tar.bz2
+-rw-r--r--   1 root root  86443577 May  7 14:42 bug04151419.tar.bz2
+-rw-r--r--   1 root root   1574501 May  7 14:44 bug04151421.tar.bz2
+-rw-r--r--   1 root root   1579213 May  7 14:45 bug04151654.tar.bz2
+-rw-r--r--   1 root root  31964751 May  7 14:53 bug04151721.tar.bz2
+-rw-r--r--   1 root root     96373 May  7 14:53 bug04151844.tar.bz2
+-rw-r--r--   1 root root    107616 May  7 14:53 bug04151935.tar.bz2
+-rw-r--r--   1 root root     63290 May  7 14:53 bug04151953.tar.bz2
+-rw-r--r--   1 root root     11656 May  7 14:53 bug04191644.tar.bz2
+-rw-r--r--   1 root root  21886398 Apr 21 15:18 bug04191724.tar.bz2
+drwxr-xr-x   2 root root      4096 Apr 22 09:35 bug04220920
+-rw-r--r--   1 root root 690225152 May  7 17:19 bug04220920.tar.bz2
+drwxr-xr-x   4 root root      4096 Apr 22 09:21 bug04220920_volume
+drwxr-xr-x   2 root root      4096 Apr 22 14:28 bug04221415
+-rw-r--r--   1 root root   1110474 Apr 22 14:29 bug04221415.tar.bz2
+drwxr-xr-x   5 root root      4096 Apr 22 14:14 bug04221415_volume
+drwxr-xr-x   2 root root      4096 Apr 24 11:30 bug04241130
+drwxr-xr-x   2 root root      4096 Apr 24 14:09 bug04241346
+drwxr-xr-x   2 root root      4096 Apr 24 15:16 bug04241516
+drwxr-xr-x   2 root root      4096 Apr 24 15:27 bug04241528
+drwxr-xr-x   5 root root      4096 Apr 24 15:37 bug04241528_volume
+drwxr-xr-x   2 root root      4096 Apr 24 15:51 bug04241551
+drwxr-xr-x   2 root root      4096 Apr 24 18:23 bug04241824
+drwxr-xr-x   5 root root      4096 Apr 24 18:24 bug04241824_volume
+drwxr-xr-x   2 root root      4096 Apr 27 13:33 bug04271334
+drwxr-xr-x   2 root root      4096 Apr 27 16:57 bug04271655
+drwxr-xr-x   2 root root      4096 Apr 27 21:46 bug04271733
+drwxr-xr-x   5 root root      4096 Apr 27 17:35 bug04271733_volume
+drwxr-xr-x   2 root root      4096 May  2 13:44 bug05021345
+drwxr-xr-x   2 root root      4096 May  2 16:05 bug05021605
+drwxr-xr-x   5 root root      4096 May  2 16:16 bug05021605_volume
+drwxr-xr-x   5 root root      4096 May  6 15:57 bug05061555
+drwxr-xr-x   2 root root      4096 May  6 16:10 bug05061555_log
+drwxr-xr-x   2 root root      4096 May  7 10:58 bug5071058
+drwxr-xr-x   5 root root      4096 May  7 10:58 bug5071058_volume
+drwxr-xr-x   2 root root      4096 May  3 16:59 but05031659
+drwxr-xr-x   2 root root      4096 May  3 17:08 but05031659_volume
+drwxr-xr-x   3 root root      4096 May  3 17:30 home
+======== end ========
+
+======== target: 172.16.236.17 ========
+total 73428
+drwxr-xr-x  2 root root     4096 May  7 14:20 .
+drwxr-xr-x 11 root root     4096 May  7 11:04 ..
+-rw-r--r--  1 root root  9962499 May  7 14:20 bug05061555.tar.bz2
+-rw-r--r--  1 root root 31248190 May  7 14:20 bug05061555_log.tar.bz2
+-rw-r--r--  1 root root     3159 May  7 14:20 bug5071058.tar.bz2
+-rw-r--r--  1 root root      195 May  7 14:20 bug5071058_volume.tar.bz2
+-rw-r--r--  1 root root 28159460 May  7 14:20 but05031659.tar.bz2
+-rw-r--r--  1 root root  5793188 May  7 14:20 but05031659_volume.tar.bz2
+======== end ========
+
+======== target: 172.16.236.19 ========
+total 634864
+drwxr-xr-x. 55 root root      4096 May  7 16:41 .
+drwxr-xr-x. 19 root root      4096 May  7 11:08 ..
+-rw-r--r--.  1 root root     96037 May  7 14:05 bug03201229.tar.bz2
+-rw-r--r--.  1 root root    134690 May  7 14:05 bug03211040.tar.bz2
+-rw-r--r--.  1 root root   3038083 May  7 14:07 bug03211635.tar.bz2
+-rw-r--r--.  1 root root   4292110 May  7 14:09 bug03211725.tar.bz2
+-rw-r--r--.  1 root root   4517076 May  7 14:11 bug03211736.tar.bz2
+-rw-r--r--.  1 root root   9352491 May  7 14:14 bug03211812.tar.bz2
+-rw-r--r--.  1 root root    299924 May  7 14:14 bug0321518.tar.bz2
+-rw-r--r--.  1 root root   1895848 May  7 14:16 bug03271132.tar.bz2
+-rw-r--r--.  1 root root    293241 May  7 14:16 bug03280923.tar.bz2
+-rw-r--r--.  1 root root 297095314 May  7 15:16 bug03281331.tar.bz2
+-rw-r--r--.  1 root root         0 Mar 28 14:31 bug03281432
+-rw-r--r--.  1 root root    139919 May  7 15:16 bug04031402.tar.bz2
+-rw-r--r--.  1 root root     58026 May  7 15:16 bug04070959.tar.bz2
+-rw-r--r--.  1 root root  85174940 May  7 15:59 bug04091424.tar.bz2
+-rw-r--r--.  1 root root  85298407 May  7 16:41 bug04091554.tar.bz2
+drwxr-xr-x.  2 root root      4096 Apr 17 15:49 bug04101513
+-rw-r--r--.  1 root root 106098688 May  7 17:23 bug04101513.tar.bz2
+drwxr-xr-x.  2 root root      4096 May  2 14:47 bug04101823
+drwxr-xr-x.  2 root root      4096 Apr 12 19:10 bug04121905
+drwxr-xr-x.  2 root root      4096 Apr 15 14:26 bug04151421
+drwxr-xr-x.  2 root root      4096 Apr 15 17:01 bug04151654
+drwxr-xr-x.  2 root root      4096 Apr 15 17:27 bug04151721
+drwxr-xr-x.  2 root root      4096 Apr 18 14:21 bug04151844
+drwxr-xr-x.  2 root root      4096 Apr 17 14:58 bug04151935
+drwxr-xr-x.  2 root root      4096 Apr 17 10:29 bug04151953
+drwxr-xr-x.  2 root root      4096 Apr 19 16:48 bug04191644
+-rw-r--r--.  1 root root  20752967 Apr 21 15:21 bug04191724.tar.bz2
+drwxr-xr-x.  2 root root      4096 Apr 22 14:30 bug04220920
+drwxr-xr-x.  4 root root      4096 Apr 22 09:24 bug04220920_volume
+drwxr-xr-x.  2 root root      4096 Apr 22 14:18 bug04221415
+-rw-r--r--.  1 root root  31288937 Apr 22 14:40 bug04221415.tar.bz2
+drwxr-xr-x.  5 root root      4096 Apr 22 14:18 bug04221415_volume
+drwxr-xr-x.  2 root root      4096 Apr 24 11:33 bug04241130
+drwxr-xr-x.  2 root root      4096 Apr 24 14:13 bug04241346
+drwxr-xr-x.  2 root root      4096 Apr 24 15:19 bug04241516
+drwxr-xr-x.  2 root root      4096 Apr 24 15:31 bug04241528
+drwxr-xr-x.  5 root root      4096 Apr 24 15:40 bug04241528_volume
+drwxr-xr-x.  2 root root      4096 Apr 24 15:54 bug04241551
+drwxr-xr-x.  2 root root      4096 Apr 24 18:27 bug04241824
+drwxr-xr-x.  5 root root      4096 Apr 24 18:28 bug04241824_volume
+drwxr-xr-x.  2 root root      4096 Apr 27 13:37 bug04271334
+drwxr-xr-x.  2 root root      4096 May  2 17:33 bug04271655
+drwxr-xr-x.  2 root root      4096 Apr 27 21:48 bug04271733
+drwxr-xr-x.  5 root root      4096 Apr 27 17:39 bug04271733_volume
+drwxr-xr-x.  2 root root      4096 May  2 13:48 bug05021345
+drwxr-xr-x.  2 root root      4096 May  2 16:08 bug05021605
+drwxr-xr-x.  5 root root      4096 May  2 16:19 bug05021605_volume
+drwxr-xr-x.  5 root root      4096 May  6 16:01 bug05061555
+drwxr-xr-x.  2 root root      4096 May  6 16:09 bug05061555_log
+drwxr-xr-x.  2 root root      4096 Feb 22 09:30 bug19:57
+drwxr-xr-x.  2 root root      4096 Mar 20 10:06 bug201303191005
+drwxr-xr-x.  2 root root      4096 May  7 11:02 bug5071058
+drwxr-xr-x.  5 root root      4096 May  7 11:02 bug5071058_volume
+drwxr-xr-x.  2 root root      4096 Feb 19 13:34 bug796
+drwxr-xr-x.  2 root root      4096 Feb 20 10:17 bug802
+drwxr-xr-x.  2 root root      4096 Feb 20 16:23 bug806
+drwxr-xr-x.  2 root root      4096 Feb 20 16:46 bug807
+drwxr-xr-x.  2 root root      4096 Feb 21 22:50 bug810
+drwxr-xr-x.  2 root root      4096 Feb 21 15:33 bug811
+drwxr-xr-x.  2 root root      4096 Feb 21 17:08 bug812
+drwxr-xr-x.  2 root root      4096 Feb 21 18:57 bug817
+drwxr-xr-x.  2 root root      4096 Mar  6 10:00 bug824
+drwxr-xr-x.  2 root root      4096 Feb 26 10:02 bug825
+drwxr-xr-x.  2 root root      4096 Mar  4 12:24 bug832
+drwxr-xr-x.  2 root root      4096 Mar  1 17:34 bug837
+drwxr-xr-x.  2 root root      4096 Mar  4 14:56 bug841
+drwxr-xr-x.  2 root root      4096 Mar 14 15:21 bug880
+drwxr-xr-x.  2 root root      4096 Mar 20 12:23 bug907
+-rw-r--r--.  1 root root       112 May  7 14:05 bug.tar.bz2
+drwxr-xr-x.  3 root root      4096 May  3 17:19 but05031659
+drwxr-xr-x.  2 root root      4096 May  3 17:14 but05031659_volume
+drwxr-xr-x.  3 root root      4096 May  3 17:48 home
+======== end ========
+
+======== target: 172.16.236.20 ========
+total 45544
+drwxr-xr-x  2 root root     4096 2013-05-07 14:10 .
+drwxr-xr-x 12 root root     4096 2013-05-07 11:04 ..
+-rw-r--r--  1 root root   455162 2013-05-07 14:01 bug05061544.tar.bz2
+-rw-r--r--  1 root root 17650447 2013-05-07 14:07 bug05061555_log.tar.bz2
+-rw-r--r--  1 root root   484096 2013-05-07 14:07 bug05061555.tar.bz2
+-rw-r--r--  1 root root     3206 2013-05-07 14:07 bug5071058.tar.bz2
+-rw-r--r--  1 root root      195 2013-05-07 14:07 bug5071058_volume.tar.bz2
+-rw-r--r--  1 root root 23117610 2013-05-07 14:10 but05031659.tar.bz2
+-rw-r--r--  1 root root  4900105 2013-05-07 14:10 but05031659_volume.tar.bz2
+======== end ========
+
+[yoyo-sh]> serialCmd ls -la /home/datacellbug/
+======== target: 172.16.236.24 ========
+总用量 1098676
+drwxr-xr-x. 27 root root      4096 5月   7 16:05 .
+drwxr-xr-x. 11 root root      4096 5月   7 11:04 ..
+-rw-r--r--   1 root root     11529 5月   7 14:16 bug04171622agent.tar.bz2
+-rw-r--r--   1 root root  29617704 5月   7 14:16 bug04171622.tar.bz2
+-rw-r--r--   1 root root   3595236 5月   7 14:16 bug04181529.tar.bz2
+-rw-r--r--   1 root root  33380119 5月   7 14:28 bug04181629.tar.bz2
+-rw-r--r--   1 root root  15852806 5月   7 14:30 bug04181709.tar.bz2
+-rw-r--r--   1 root root  18805143 5月   7 14:33 bug04181731.tar.bz2
+-rw-r--r--   1 root root 596578544 5月   7 15:52 bug04191514.tar.bz2
+-rw-r--r--   1 root root  50407233 5月   7 16:00 bug04191537.tar.bz2
+-rw-r--r--   1 root root  39507128 5月   7 16:05 bug04191644.tar.bz2
+-rw-r--r--.  1 root root  23986558 4月  21 15:19 bug04191724.tar.bz2
+drwxr-xr-x.  2 root root      4096 4月  22 09:32 bug04220920
+-rw-r--r--   1 root root 281739264 5月   7 17:19 bug04220920.tar.bz2
+drwxr-xr-x.  4 root root      4096 4月  22 09:22 bug04220920_volume
+drwxr-xr-x.  2 root root      4096 4月  22 14:16 bug04221415
+-rw-r--r--.  1 root root  31408432 4月  22 14:38 bug04221415.tar.bz2
+drwxr-xr-x.  5 root root      4096 4月  22 14:16 bug04221415_volume
+drwxr-xr-x.  2 root root      4096 4月  24 11:31 bug04241130
+drwxr-xr-x.  2 root root      4096 4月  24 14:13 bug04241346
+drwxr-xr-x.  2 root root      4096 4月  24 15:20 bug04241516
+drwxr-xr-x.  2 root root      4096 4月  24 15:30 bug04241528
+drwxr-xr-x.  5 root root      4096 4月  24 15:38 bug04241528_volume
+drwxr-xr-x.  2 root root      4096 4月  24 15:51 bug04241551
+drwxr-xr-x.  2 root root      4096 4月  24 18:24 bug04241824
+drwxr-xr-x.  5 root root      4096 4月  24 18:25 bug04241824_volume
+drwxr-xr-x.  2 root root      4096 4月  27 13:34 bug04271334
+drwxr-xr-x.  2 root root      4096 4月  27 16:58 bug04271655
+drwxr-xr-x.  2 root root      4096 4月  27 20:02 bug04271733
+drwxr-xr-x.  5 root root      4096 4月  27 17:36 bug04271733_volume
+drwxr-xr-x.  2 root root      4096 5月   2 13:45 bug05021345
+drwxr-xr-x.  2 root root      4096 5月   2 16:05 bug05021605
+drwxr-xr-x.  5 root root      4096 5月   2 16:16 bug05021605_volume
+drwxr-xr-x   5 root root      4096 5月   6 15:57 bug05061555
+drwxr-xr-x   2 root root      4096 5月   6 16:11 bug05061555_log
+drwxr-xr-x   2 root root      4096 5月   7 10:58 bug5071058
+drwxr-xr-x   5 root root      4096 5月   7 10:58 bug5071058_volume
+drwxr-xr-x.  2 root root      4096 5月   3 17:02 but05031659
+drwxr-xr-x.  2 root root      4096 5月   3 17:13 but05031659_volume
+======== end ========
+
+======== target: 172.16.236.26 ========
+总用量 1022396
+drwxr-xr-x. 27 root root      4096 5月   7 15:01 .
+drwxr-xr-x. 11 root root      4096 5月   7 11:04 ..
+-rw-r--r--   1 root root   3420854 5月   7 14:02 bug04181529.tar.bz2
+-rw-r--r--   1 root root  34283684 5月   7 14:14 bug04181629.tar.bz2
+-rw-r--r--   1 root root  15070735 5月   7 14:16 bug04181709.tar.bz2
+-rw-r--r--   1 root root  15245544 5月   7 14:18 bug04181731.tar.bz2
+-rw-r--r--   1 root root 221450371 5月   7 14:49 bug04191514.tar.bz2
+-rw-r--r--   1 root root  49043773 5月   7 14:57 bug04191537.tar.bz2
+-rw-r--r--   1 root root  35820959 5月   7 15:01 bug04191644.tar.bz2
+-rw-r--r--   1 root root  26409702 4月  21 15:20 bug04191724.tar.bz2
+drwxr-xr-x   2 root root      4096 4月  22 09:36 bug04220920
+-rw-r--r--   1 root root 645185536 5月   7 17:19 bug04220920.tar.bz2
+drwxr-xr-x   4 root root      4096 4月  22 09:22 bug04220920_volume
+drwxr-xr-x   2 root root      4096 4月  22 14:16 bug04221415
+-rw-r--r--   1 root root    857015 4月  22 14:35 bug04221415.tar.bz2
+drwxr-xr-x   5 root root      4096 4月  22 14:16 bug04221415_volume
+drwxr-xr-x   2 root root      4096 4月  24 11:31 bug04241130
+drwxr-xr-x   2 root root      4096 4月  24 14:15 bug04241346
+drwxr-xr-x   2 root root      4096 4月  24 15:20 bug04241516
+drwxr-xr-x   2 root root      4096 4月  24 15:29 bug04241528
+drwxr-xr-x   5 root root      4096 4月  24 15:38 bug04241528_volume
+drwxr-xr-x   2 root root      4096 4月  24 15:51 bug04241551
+drwxr-xr-x   2 root root      4096 4月  24 18:24 bug04241824
+drwxr-xr-x   5 root root      4096 4月  24 18:25 bug04241824_volume
+drwxr-xr-x   2 root root      4096 4月  27 13:34 bug04271334
+drwxr-xr-x   2 root root      4096 4月  27 16:58 bug04271655
+drwxr-xr-x   2 root root      4096 4月  27 19:59 bug04271733
+drwxr-xr-x   5 root root      4096 4月  27 17:36 bug04271733_volume
+drwxr-xr-x   2 root root      4096 5月   2 13:45 bug05021345
+drwxr-xr-x   2 root root      4096 5月   2 22:47 bug05021605
+drwxr-xr-x   5 root root      4096 5月   2 16:16 bug05021605_volume
+drwxr-xr-x   5 root root      4096 5月   6 15:57 bug05061555
+drwxr-xr-x   2 root root      4096 5月   6 16:11 bug05061555_log
+drwxr-xr-x   2 root root      4096 5月   7 10:58 bug5071058
+drwxr-xr-x   5 root root      4096 5月   7 10:58 bug5071058_volume
+drwxr-xr-x   2 root root      4096 5月   3 16:59 but05031659
+drwxr-xr-x   2 root root      4096 5月   3 17:10 but05031659_volume
+======== end ========
+
+======== target: 172.16.236.10 ========
+total 1024728
+drwxr-xr-x  29 root root      4096 May  7 14:49 .
+drwxr-xr-x. 17 root root      4096 May  7 11:09 ..
+-rw-r--r--   1 root root 177449387 May  7 14:39 bug04191514.tar.bz2
+-rw-r--r--   1 root root  48161663 May  7 14:46 bug04191537.tar.bz2
+-rw-r--r--   1 root root  20852503 May  7 14:49 bug04191644.tar.bz2
+-rw-r--r--   1 root root  14585440 Apr 21 15:25 bug04191724.tar.bz2
+drwxr-xr-x   2 root root      4096 Apr 22 14:03 bug04220920
+-rw-r--r--   1 root root 757649408 May  7 17:24 bug04220920.tar.bz2
+drwxr-xr-x   4 root root      4096 Apr 22 09:26 bug04220920_volume
+drwxr-xr-x   2 root root      4096 Apr 22 14:20 bug04221415
+-rw-r--r--   1 root root  30489896 Apr 22 14:42 bug04221415.tar.bz2
+drwxr-xr-x   5 root root      4096 Apr 22 14:20 bug04221415_volume
+drwxr-xr-x   2 root root      4096 Apr 24 11:34 bug04241130
+drwxr-xr-x   2 root root      4096 Apr 26 23:09 bug04241346
+drwxr-xr-x   2 root root      4096 Apr 24 15:22 bug04241516
+drwxr-xr-x   2 root root      4096 Apr 24 15:32 bug04241528
+drwxr-xr-x   5 root root      4096 Apr 24 15:41 bug04241528_volume
+drwxr-xr-x   2 root root      4096 Apr 24 15:55 bug04241551
+drwxr-xr-x   2 root root      4096 Apr 24 18:28 bug04241824
+drwxr-xr-x   5 root root      4096 Apr 24 18:28 bug04241824_volume
+drwxr-xr-x   2 root root      4096 Apr 27 13:38 bug04271334
+drwxr-xr-x   2 root root      4096 Apr 27 17:02 bug04271655
+drwxr-xr-x   2 root root      4096 Apr 27 21:39 bug04271733
+drwxr-xr-x   5 root root      4096 Apr 27 17:40 bug04271733_volume
+drwxr-xr-x   2 root root      4096 May  2 13:50 bug05021345
+drwxr-xr-x   3 root root      4096 May  6 12:11 bug05021605
+drwxr-xr-x   5 root root      4096 May  2 16:21 bug05021605_volume
+drwxr-xr-x   2 root root      4096 May  6 16:02 bug05061544
+drwxr-xr-x   5 root root      4096 May  6 16:02 bug05061555
+drwxr-xr-x   2 root root      4096 May  6 16:51 bug05061555_log
+drwxr-xr-x   2 root root      4096 May  7 11:03 bug5071058
+drwxr-xr-x   5 root root      4096 May  7 11:03 bug5071058_volume
+drwxr-xr-x   2 root root      4096 May  3 17:08 but05031659
+drwxr-xr-x   2 root root      4096 May  3 17:16 but05031659_volume
+drwxr-xr-x   3 root root      4096 May  3 17:46 home
+======== end ========
+
+======== target: 172.16.236.31 ========
+total 816028
+drwxr-xr-x  28 root root      4096 May  7 14:53 .
+drwxr-xr-x. 21 root root      4096 May  7 11:04 ..
+-rw-r--r--   1 root root    189561 May  7 14:01 bug04091424.tar.bz2
+-rw-r--r--   1 root root     76830 May  7 14:01 bug04101513.tar.bz2
+-rw-r--r--   1 root root     96609 May  7 14:01 bug04101823.tar.bz2
+-rw-r--r--   1 root root     37075 May  7 14:01 bug04121905.tar.bz2
+-rw-r--r--   1 root root  86443577 May  7 14:42 bug04151419.tar.bz2
+-rw-r--r--   1 root root   1574501 May  7 14:44 bug04151421.tar.bz2
+-rw-r--r--   1 root root   1579213 May  7 14:45 bug04151654.tar.bz2
+-rw-r--r--   1 root root  31964751 May  7 14:53 bug04151721.tar.bz2
+-rw-r--r--   1 root root     96373 May  7 14:53 bug04151844.tar.bz2
+-rw-r--r--   1 root root    107616 May  7 14:53 bug04151935.tar.bz2
+-rw-r--r--   1 root root     63290 May  7 14:53 bug04151953.tar.bz2
+-rw-r--r--   1 root root     11656 May  7 14:53 bug04191644.tar.bz2
+-rw-r--r--   1 root root  21886398 Apr 21 15:18 bug04191724.tar.bz2
+drwxr-xr-x   2 root root      4096 Apr 22 09:35 bug04220920
+-rw-r--r--   1 root root 690225152 May  7 17:19 bug04220920.tar.bz2
+drwxr-xr-x   4 root root      4096 Apr 22 09:21 bug04220920_volume
+drwxr-xr-x   2 root root      4096 Apr 22 14:28 bug04221415
+-rw-r--r--   1 root root   1110474 Apr 22 14:29 bug04221415.tar.bz2
+drwxr-xr-x   5 root root      4096 Apr 22 14:14 bug04221415_volume
+drwxr-xr-x   2 root root      4096 Apr 24 11:30 bug04241130
+drwxr-xr-x   2 root root      4096 Apr 24 14:09 bug04241346
+drwxr-xr-x   2 root root      4096 Apr 24 15:16 bug04241516
+drwxr-xr-x   2 root root      4096 Apr 24 15:27 bug04241528
+drwxr-xr-x   5 root root      4096 Apr 24 15:37 bug04241528_volume
+drwxr-xr-x   2 root root      4096 Apr 24 15:51 bug04241551
+drwxr-xr-x   2 root root      4096 Apr 24 18:23 bug04241824
+drwxr-xr-x   5 root root      4096 Apr 24 18:24 bug04241824_volume
+drwxr-xr-x   2 root root      4096 Apr 27 13:33 bug04271334
+drwxr-xr-x   2 root root      4096 Apr 27 16:57 bug04271655
+drwxr-xr-x   2 root root      4096 Apr 27 21:46 bug04271733
+drwxr-xr-x   5 root root      4096 Apr 27 17:35 bug04271733_volume
+drwxr-xr-x   2 root root      4096 May  2 13:44 bug05021345
+drwxr-xr-x   2 root root      4096 May  2 16:05 bug05021605
+drwxr-xr-x   5 root root      4096 May  2 16:16 bug05021605_volume
+drwxr-xr-x   5 root root      4096 May  6 15:57 bug05061555
+drwxr-xr-x   2 root root      4096 May  6 16:10 bug05061555_log
+drwxr-xr-x   2 root root      4096 May  7 10:58 bug5071058
+drwxr-xr-x   5 root root      4096 May  7 10:58 bug5071058_volume
+drwxr-xr-x   2 root root      4096 May  3 16:59 but05031659
+drwxr-xr-x   2 root root      4096 May  3 17:08 but05031659_volume
+drwxr-xr-x   3 root root      4096 May  3 17:30 home
+======== end ========
+
+======== target: 172.16.236.17 ========
+total 73428
+drwxr-xr-x  2 root root     4096 May  7 14:20 .
+drwxr-xr-x 11 root root     4096 May  7 11:04 ..
+-rw-r--r--  1 root root  9962499 May  7 14:20 bug05061555.tar.bz2
+-rw-r--r--  1 root root 31248190 May  7 14:20 bug05061555_log.tar.bz2
+-rw-r--r--  1 root root     3159 May  7 14:20 bug5071058.tar.bz2
+-rw-r--r--  1 root root      195 May  7 14:20 bug5071058_volume.tar.bz2
+-rw-r--r--  1 root root 28159460 May  7 14:20 but05031659.tar.bz2
+-rw-r--r--  1 root root  5793188 May  7 14:20 but05031659_volume.tar.bz2
+======== end ========
+
+======== target: 172.16.236.19 ========
+total 634864
+drwxr-xr-x. 55 root root      4096 May  7 16:41 .
+drwxr-xr-x. 19 root root      4096 May  7 11:08 ..
+-rw-r--r--.  1 root root     96037 May  7 14:05 bug03201229.tar.bz2
+-rw-r--r--.  1 root root    134690 May  7 14:05 bug03211040.tar.bz2
+-rw-r--r--.  1 root root   3038083 May  7 14:07 bug03211635.tar.bz2
+-rw-r--r--.  1 root root   4292110 May  7 14:09 bug03211725.tar.bz2
+-rw-r--r--.  1 root root   4517076 May  7 14:11 bug03211736.tar.bz2
+-rw-r--r--.  1 root root   9352491 May  7 14:14 bug03211812.tar.bz2
+-rw-r--r--.  1 root root    299924 May  7 14:14 bug0321518.tar.bz2
+-rw-r--r--.  1 root root   1895848 May  7 14:16 bug03271132.tar.bz2
+-rw-r--r--.  1 root root    293241 May  7 14:16 bug03280923.tar.bz2
+-rw-r--r--.  1 root root 297095314 May  7 15:16 bug03281331.tar.bz2
+-rw-r--r--.  1 root root         0 Mar 28 14:31 bug03281432
+-rw-r--r--.  1 root root    139919 May  7 15:16 bug04031402.tar.bz2
+-rw-r--r--.  1 root root     58026 May  7 15:16 bug04070959.tar.bz2
+-rw-r--r--.  1 root root  85174940 May  7 15:59 bug04091424.tar.bz2
+-rw-r--r--.  1 root root  85298407 May  7 16:41 bug04091554.tar.bz2
+drwxr-xr-x.  2 root root      4096 Apr 17 15:49 bug04101513
+-rw-r--r--.  1 root root 106098688 May  7 17:23 bug04101513.tar.bz2
+drwxr-xr-x.  2 root root      4096 May  2 14:47 bug04101823
+drwxr-xr-x.  2 root root      4096 Apr 12 19:10 bug04121905
+drwxr-xr-x.  2 root root      4096 Apr 15 14:26 bug04151421
+drwxr-xr-x.  2 root root      4096 Apr 15 17:01 bug04151654
+drwxr-xr-x.  2 root root      4096 Apr 15 17:27 bug04151721
+drwxr-xr-x.  2 root root      4096 Apr 18 14:21 bug04151844
+drwxr-xr-x.  2 root root      4096 Apr 17 14:58 bug04151935
+drwxr-xr-x.  2 root root      4096 Apr 17 10:29 bug04151953
+drwxr-xr-x.  2 root root      4096 Apr 19 16:48 bug04191644
+-rw-r--r--.  1 root root  20752967 Apr 21 15:21 bug04191724.tar.bz2
+drwxr-xr-x.  2 root root      4096 Apr 22 14:30 bug04220920
+drwxr-xr-x.  4 root root      4096 Apr 22 09:24 bug04220920_volume
+drwxr-xr-x.  2 root root      4096 Apr 22 14:18 bug04221415
+-rw-r--r--.  1 root root  31288937 Apr 22 14:40 bug04221415.tar.bz2
+drwxr-xr-x.  5 root root      4096 Apr 22 14:18 bug04221415_volume
+drwxr-xr-x.  2 root root      4096 Apr 24 11:33 bug04241130
+drwxr-xr-x.  2 root root      4096 Apr 24 14:13 bug04241346
+drwxr-xr-x.  2 root root      4096 Apr 24 15:19 bug04241516
+drwxr-xr-x.  2 root root      4096 Apr 24 15:31 bug04241528
+drwxr-xr-x.  5 root root      4096 Apr 24 15:40 bug04241528_volume
+drwxr-xr-x.  2 root root      4096 Apr 24 15:54 bug04241551
+drwxr-xr-x.  2 root root      4096 Apr 24 18:27 bug04241824
+drwxr-xr-x.  5 root root      4096 Apr 24 18:28 bug04241824_volume
+drwxr-xr-x.  2 root root      4096 Apr 27 13:37 bug04271334
+drwxr-xr-x.  2 root root      4096 May  2 17:33 bug04271655
+drwxr-xr-x.  2 root root      4096 Apr 27 21:48 bug04271733
+drwxr-xr-x.  5 root root      4096 Apr 27 17:39 bug04271733_volume
+drwxr-xr-x.  2 root root      4096 May  2 13:48 bug05021345
+drwxr-xr-x.  2 root root      4096 May  2 16:08 bug05021605
+drwxr-xr-x.  5 root root      4096 May  2 16:19 bug05021605_volume
+drwxr-xr-x.  5 root root      4096 May  6 16:01 bug05061555
+drwxr-xr-x.  2 root root      4096 May  6 16:09 bug05061555_log
+drwxr-xr-x.  2 root root      4096 Feb 22 09:30 bug19:57
+drwxr-xr-x.  2 root root      4096 Mar 20 10:06 bug201303191005
+drwxr-xr-x.  2 root root      4096 May  7 11:02 bug5071058
+drwxr-xr-x.  5 root root      4096 May  7 11:02 bug5071058_volume
+drwxr-xr-x.  2 root root      4096 Feb 19 13:34 bug796
+drwxr-xr-x.  2 root root      4096 Feb 20 10:17 bug802
+drwxr-xr-x.  2 root root      4096 Feb 20 16:23 bug806
+drwxr-xr-x.  2 root root      4096 Feb 20 16:46 bug807
+drwxr-xr-x.  2 root root      4096 Feb 21 22:50 bug810
+drwxr-xr-x.  2 root root      4096 Feb 21 15:33 bug811
+drwxr-xr-x.  2 root root      4096 Feb 21 17:08 bug812
+drwxr-xr-x.  2 root root      4096 Feb 21 18:57 bug817
+drwxr-xr-x.  2 root root      4096 Mar  6 10:00 bug824
+drwxr-xr-x.  2 root root      4096 Feb 26 10:02 bug825
+drwxr-xr-x.  2 root root      4096 Mar  4 12:24 bug832
+drwxr-xr-x.  2 root root      4096 Mar  1 17:34 bug837
+drwxr-xr-x.  2 root root      4096 Mar  4 14:56 bug841
+drwxr-xr-x.  2 root root      4096 Mar 14 15:21 bug880
+drwxr-xr-x.  2 root root      4096 Mar 20 12:23 bug907
+-rw-r--r--.  1 root root       112 May  7 14:05 bug.tar.bz2
+drwxr-xr-x.  3 root root      4096 May  3 17:19 but05031659
+drwxr-xr-x.  2 root root      4096 May  3 17:14 but05031659_volume
+drwxr-xr-x.  3 root root      4096 May  3 17:48 home
+======== end ========
+
+======== target: 172.16.236.20 ========
+total 45544
+drwxr-xr-x  2 root root     4096 2013-05-07 14:10 .
+drwxr-xr-x 12 root root     4096 2013-05-07 11:04 ..
+-rw-r--r--  1 root root   455162 2013-05-07 14:01 bug05061544.tar.bz2
+-rw-r--r--  1 root root 17650447 2013-05-07 14:07 bug05061555_log.tar.bz2
+-rw-r--r--  1 root root   484096 2013-05-07 14:07 bug05061555.tar.bz2
+-rw-r--r--  1 root root     3206 2013-05-07 14:07 bug5071058.tar.bz2
+-rw-r--r--  1 root root      195 2013-05-07 14:07 bug5071058_volume.tar.bz2
+-rw-r--r--  1 root root 23117610 2013-05-07 14:10 but05031659.tar.bz2
+-rw-r--r--  1 root root  4900105 2013-05-07 14:10 but05031659_volume.tar.bz2
+======== end ========
+
+[yoyo-sh]> q
+Bye!
+]0;libin@libin-ThinkPad-T420: ~/workspace/yoyo-netvm/auto-test/newtools/yoyosyslibin@libin-ThinkPad-T420:~/workspace/yoyo-netvm/auto-test/newtools/yoyosys$ exit
+exit
+
+Script done on 2013年05月07日 星期二 17时23分08秒

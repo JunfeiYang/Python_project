@@ -1,0 +1,14 @@
+#!/usr/bin/python   
+#-*- encoding: utf-8 -*-
+# write by world77   
+        
+import os   
+                
+Directory=raw_input("Please enter directory to traversal:")   
+###提示输入想遍历的文件夹路径   
+for root,dirs,files in os.walk(Directory):   
+       print root   
+for name in dirs:   
+       print "Directory:",name   #打印文件夹名   
+for name in files:   
+       print "FileName:",name    #打印文件名

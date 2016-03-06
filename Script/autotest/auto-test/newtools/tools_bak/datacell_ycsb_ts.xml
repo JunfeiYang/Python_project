@@ -1,0 +1,136 @@
+<Configuration>
+  <DataCell>
+    <!--
+      Root storage directory for storages
+    -->
+    <Root>/data/data1</Root>
+    <Bitsflow>
+      <!-- IPC communication Related Bitsflow config -->
+      <IPC>
+        <!--
+          Address of bitsflow agent
+        -->
+        <Agent>localhost:31239</Agent>
+        <!-- Bitsflow Service -->
+        <Service>5678</Service>
+        <Group-Daemon-Service>5888</Group-Daemon-Service>
+        <!-- Group Communication related settings -->
+        <Group-Comm>
+          <!-- number of seconds before consider member out of group
+               without receiving heartbeat message -->
+          <Alive-Timeout>600</Alive-Timeout>
+          <!-- number of seconds before giving up when join a group -->
+          <Join-Timeout>
+            <!-- number of seconds before each join to give up-->
+            <Soft>600</Soft>
+            <!-- number of seconds before stop retrying -->
+            <Hard>6000</Hard>
+          </Join-Timeout>
+          <!-- number of seconds before stop retrying after a slot
+               group partition -->
+          <Rejoin-Timeout>1200</Rejoin-Timeout>
+          <!-- number of seconds between two heartbeat -->
+          <Heartbeat-Period>1</Heartbeat-Period>
+          <!-- number of seconds before consider network partition
+               without receiving response from group daemon -->
+          <Ping-Timeout>600</Ping-Timeout>
+          <!-- The period to cleanup stable message in second -->
+          <Stable-Message-Cleanup-Period>10</Stable-Message-Cleanup-Period>
+          <!-- The period to send stable message in second -->
+          <Stable-Message-Response-Period>5</Stable-Message-Response-Period>
+        </Group-Comm>
+        <Thread>4</Thread>
+      </IPC>
+      <!-- Data communication Related Bitsflow config -->
+      <Data>
+        <!--
+          Address of bitsflow agent
+        -->
+        <Agent>localhost:31239</Agent>
+        <!-- Bitsflow Service -->
+        <Service>1120</Service>
+        <Thread>4</Thread>
+      </Data>
+      <!-- State Transfer communication Related Bitsflow config -->
+      <State-Transfer>
+        <!--
+          Address of bitsflow agent
+        -->
+        <Agent>localhost:31239</Agent>
+        <!-- Bitsflow Service -->
+        <Service>1120</Service>
+      </State-Transfer>
+    </Bitsflow>
+   <!-- DataCell Node Name -->
+    <Name>DC_NODE_1</Name>
+    <!-- TODO this needs to go to storage config -->
+    <Bootstrap>
+      <!-- number of nodes before entering bootstrap pending state -->
+      <Bootstrap-Pending-Threshold>1</Bootstrap-Pending-Threshold>
+      <!-- 
+           Minimum number of nodes for all slots before starting bootstrap process
+           The number must be equal or greater than 1 and equals or less than number of replications
+      -->
+      <Bootstrap-Start-Threshold>1</Bootstrap-Start-Threshold>
+    </Bootstrap>
+    <!-- Dispatchers settings -->
+    <Dispatchers>
+      <!-- Processors settings -->
+      <Process>
+        <!-- Number of processor dispatchers -->
+        <Number>5</Number>
+      </Process>
+      <!-- State transfer dispatcher settings -->
+      <State-Transfer>
+        <!-- Number of state transfer dispatchers -->
+        <Number>5</Number>
+      </State-Transfer>
+      <Response>
+        <Number>5</Number>
+      </Response>
+    </Dispatchers>
+    <!-- Storages setting -->
+    <Storages>
+     <Storage>
+        <!-- Name of the table-->
+        <Name>qa_structured_ts_benchmark</Name>
+        <!-- Number of replicas -->
+        <Replication>1</Replication>
+        <!-- Optimize interval in seconds. default is 3600 seconds -->
+        <Optimize-Interval>30</Optimize-Interval>
+        <!-- 
+           Backend type
+           Possible Value: TimeSeries, FileSystem
+        -->
+        <Backend>TimeSeries</Backend>
+        <!-- -->
+        <Enable-Structured-Storage>true</Enable-Structured-Storage>
+        <!-- DHT Settings -->
+        <DHT>
+          <!-- number of slots in this dht -->
+          <Number-Of-Slots>120</Number-Of-Slots>
+          <!-- Unstable pending timeout in seconds -->
+          <Unstable-Pending-Timeout>60</Unstable-Pending-Timeout>
+        </DHT>
+        <!-- Period in second to recalculate statistics. -->
+        <Statistics-Period>10</Statistics-Period>
+       <Structured-Storage>
+          <Schema>
+            <Id>1</Id>
+            <Name>usertable</Name>
+            <Column><Name>field0</Name><Type>opaque</Type></Column>
+            <Column><Name>field1</Name><Type>opaque</Type></Column>
+            <Column><Name>field2</Name><Type>opaque</Type></Column>
+            <Column><Name>field3</Name><Type>opaque</Type></Column>
+            <Column><Name>field4</Name><Type>opaque</Type></Column>
+            <Column><Name>field5</Name><Type>opaque</Type></Column>
+            <Column><Name>field6</Name><Type>opaque</Type></Column>
+            <Column><Name>field7</Name><Type>opaque</Type></Column>
+            <Column><Name>field8</Name><Type>opaque</Type></Column>
+            <Column><Name>field9</Name><Type>opaque</Type></Column>
+          </Schema>
+        </Structured-Storage>
+     </Storage>
+    </Storages>
+  </DataCell>
+</Configuration>

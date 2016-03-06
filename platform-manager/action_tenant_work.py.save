@@ -1,0 +1,572 @@
+#!/usr/bin/python
+#_*_ coding:UTF-8 _*_
+
+import sys,os
+<<<<<<< HEAD
+import json
+=======
+>>>>>>> 8c82c008222acb5c9c021e686b59b916124725d1
+import threading
+import  time,datetime
+from logs import log as logging
+from plugins import shell
+from plugins import env_set
+from plugins import config
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+home_path = os.getcwd()
+
+
+<<<<<<< HEAD
+logfile = 'platmanager-action.log'
+=======
+logfile = 'plat-manager-action.log'
+>>>>>>> 8c82c008222acb5c9c021e686b59b916124725d1
+logdir = '/var/log/plat-manager'
+
+if not os.path.exists(logdir):
+    os.makedirs(logdir,0o755)
+os.chdir(logdir)
+logging.set_logger(filename =logfile, mode = 'a')
+
+os.chdir(home_path)
+
+conf = config.tenant_conf('plugins/platform_manager.conf')
+########################
+# global variable
+TENANT_NAME_LIST = conf.tenant_name()
+LEN_TENANT_NUM = len(TENANT_NAME_LIST)
+
+<<<<<<< HEAD
+def env_set_func(tenant_name):
+    # ['kyprivate', 'kycloudprod']
+    global TENANT_NAME_LIST
+    rescoure = conf.tenant_rescoure()
+    global LEN_TENANT_NUM
+    # 10
+    len_rescore = len(rescoure)
+    '''
+    　　下面的TENANT_NAME_LIST代表有几个租户，例如：['kyprivate', 'kycloudprod']，
+    len(TENANT_NAME_LIST)=2。通过for循环range(2),suffix进行组合，例如：suffix =2*5,
+    url_key = rescoure[10][1]取得（http://172.16.209.11:5000/v2.0）
+    '''
+    for n in range(len(TENANT_NAME_LIST)):
+        if tenant_name == TENANT_NAME_LIST[n]:
+            suffix = n*5
+            url_key = rescoure[suffix][1]
+            tenant_id_key = rescoure[suffix+1][1]
+            user_name_key = rescoure[suffix+2][1]
+            password_key = rescoure[suffix+3][1]
+            tenant_name_key = rescoure[suffix+4][1]
+            env_dist = {
+                #'OS_AUTH_URL':'http://172.16.209.11:5000/v2.0',
+                'OS_AUTH_URL':url_key,
+                #'OS_TENANT_ID':'f1134680ff48420382bad868071bb115',
+                'OS_TENANT_ID':tenant_id_key,
+                #'OS_TENANT_NAME':'kycloudprod',
+                'OS_TENANT_NAME':tenant_name_key,
+                #'OS_USERNAME':'kycloudprod',
+                'OS_USERNAME':user_name_key,
+                #'OS_PASSWORD':'che001'
+                'OS_PASSWORD':password_key
+                }
+            keys = env_dist.keys()
+            for i in keys:
+                value = env_dist[i]
+                env_set.set_env(i,value)
+            #return os.environ.data
+            return env_dist
+class action_do_work:
+    def __init__(self):
+        pass
+    def tenant_do_work(self,tenant_name,cmd):
+        #tenant_name = 'kycloudprod'
+        list_dir = '/var/lib/platform-manager/'
+        cmd_date = "date  '+%Y-%m-%d'"
+        date = shell.shell_cmd(cmd_date)[0].split()[0]
+        list_file_nova='list_'+tenant_name+'_'+date
+        list_file_volume ='list_'+tenant_name+'_volume_'+date
+        #list_file_volume_flag =list_file_volume+'_flag'
+        list_file_volume_json = list_file_volume+'.json'
+        #list_file_volume_back = list_file_volume+'.bak'
+        if not os.path.exists(list_dir):
+                os.makedirs(list_dir,0o755)
+        #os.chdir(list_dir)
+        os.chdir(home_path)
+        #TENANT_NAME_LIST =
+        env_set_func(tenant_name)
+        logging.info(os.environ.data)
+	cc = "nova list"
+	c = shell.shell_cmd(cc)
+	#print "QQQQQQQQ:%s" % c
+        #####################
+        # instance_list 
+        ######################
+        def instance_list():
+            try:
+                cmd = "nova list"
+                cmd_result = shell.shell_cmd(cmd)
+                with open(list_dir+list_file_nova,'w') as f:
+                    f.writelines(cmd_result)
+                if cmd_result:
+                    logging.info("%s %s" %(tenant_name,cmd_result))
+                else:
+                    logging.warning("%s:Instace information is empty,please check the relevant configuration" %tenant_name)
+            except IOError:
+                logging.error("Tenant:%s %s" % tenant_name)
+		raise
+            return cmd_result
+        ####################
+        # volume_json
+        ####################
+        def volume_json():
+            volume_json_key = []
+            volume_key_cmd = "nova volume-list|grep in-use |awk '{print $2}'"
+            volume_json_key_result = shell.shell_cmd(volume_key_cmd)
+            for k in xrange(len(volume_json_key_result)):
+                jk = volume_json_key_result[k].split()[0]
+                volume_json_key.append(jk)
+            volume_json = []
+            for js in xrange(len(volume_json_key)):
+                volume_value_cmd = "nova volume-show %s |grep device |awk '{print $4,$5,$6,$7,$12,$13}'" %volume_json_key[js]
+                reuslt = shell.shell_cmd(volume_value_cmd)
+                reuslt_ev = eval(reuslt[0].split('\n')[0])[0]
+                volume_json.append(reuslt_ev)
+            with open(list_dir+list_file_volume_json,'w') as fp:
+                json.dump(volume_json,fp)
+                logging.info(volume_json)
+            return volume_json
+
+            
+            
+        #######################
+        # volume_list
+        ############################
+        def volume_list():
+            try:
+                cmd = "nova volume-list"
+                cmd_result = shell.shell_cmd(cmd)
+                with open(list_dir+list_file_volume,'w') as f:
+                    f.writelines(cmd_result)
+                if cmd_result:
+                    logging.info("%s %s" %(tenant_name,cmd_result))
+                else:
+                    logging.warning("%s:Instace information is empty,please check the relevant configuration" %tenant_name)
+            except IOError:
+                logging.error("Tenant:%s %s" % (tenant_name))
+		raise
+            return cmd_result
+
+            
+        #######################
+        # instance_start
+        ############################
+        def instance_start():
+            check_old_id = []
+            check_id = []
+            server_shutdown_id = []
+            cmd_stop = "nova list|grep Shutdown |awk '{print $2}'"
+            result_stop = shell.shell_cmd(cmd_stop)
+            for j in xrange(len(result_stop)):
+                pstop = result_stop[j].split()[0]
+                server_shutdown_id.append(pstop)
+            ########################
+            # instnace_id_list
+            #################################
+            instance_id_list = server_shutdown_id
+            #####################
+            # volume_id_list
+            ##########################
+            volume_id_list = []
+            volume_list = list_dir+list_file_volume
+            cmd_volume = "grep in-use %s |awk '{print $12}'" %volume_list
+            result_volume = shell.shell_cmd(cmd_volume)
+            for v in xrange(len(result_volume)):
+                v_volume = result_volume[v].split()[0]
+                volume_id_list.append(v_volume)
+            #############################
+            # instnace_id_list and volume_id_list difference
+            #########################
+            difference=set(instance_id_list).difference(set(volume_id_list))
+            # No instances of mount cloud drive
+            for di in difference:
+                cmd_start = "nova start %s" % di
+                result_start = shell.shell_cmd(cmd_start)
+                logging.debug("instance[%s no mount cloud drive] already starting..." %di )
+                print "instance[%s no mount cloud drive] already starting...     " %di
+                    
+
+            if server_shutdown_id:
+                if os.path.exists(volume_list) and not os.path.getsize(volume_list):
+                    for s_start in server_shutdown_id:
+                        # old volume id
+                        check_cmd_old = "grep %s |awk '{print $2}'" % s_start
+                        check_old_result = shell.shell_cmd(check_cmd_old)
+                        for x in xrange(len(check_old_result)):
+                            old = check_old_result[x].split()[0]
+                            check_old_id.append(old)
+                        # current volume id
+                        check_cmd = "nova volume-list |grep %s|awk '{print $2}'" % s_start
+                        check_result = shell.shell_cmd(check_cmd)
+                        for y in xrange(len(check_result)):
+                            current = check_result[y].split()[0]
+                            check_id.append(current)
+                        # intersection
+                        check_intersection = set(check_old_oid).intersection(set(check_id))
+                            
+                        
+                        for id in check_intersection:
+                             
+                            cmd = "nova start %s" % s_start
+                            result = shell.shell_cmd(cmd)
+                            logging.debug("instance[%s] already starting... " %s_start )
+                            print "instance[%s] already starting... " %s_start 
+                else:
+                    logging.warning("%s:%s file does not exit or is empty,without the basis of a instance to start!!!" %(tenant_name,volume_list))
+            else:
+                logging.warning("%s:Instace information is empty,please check the relevant configuration" %tenant_name) 
+                
+        #######################
+        # instnace_stop
+        ############################
+        def instance_stop():
+            server_start_id = []
+            cmd_start  = "nova list |grep ACTIVE|awk '{print $2}'"
+            result_start  = shell.shell_cmd(cmd_start)
+            for j in xrange(len(result_start)):
+                pstart = result_start[j].split()[0]
+                server_start_id.append(pstart)
+            # nova stop server_start_id list  
+            for s_stop in server_start_id:
+                cmd = "nova stop %s" % s_stop
+                result = shell.shell_cmd(cmd)
+                logging.debug("instance[%s] already stopping... "     %s_stop)
+                print "instance[%s] already stopping..." % s_stop
+                
+            
+             
+            
+        #######################
+        # volume_attach
+        ############################
+        def volume_attach():
+            volume_file = list_dir+list_file_volume_json
+            try:
+                with open(volume_file) as f:
+                    json_load =json.load(f,encoding="utf-8")
+                print "This is json_load:%s" %json_load
+                start_list = []
+                for j in xrange(len(json_load)):
+                    cc = json_load[j]
+                    device = str(cc['device'])
+                    server = str(cc['server_id'])
+                    volume = str(cc['id'])
+                    ff = tuple((server,volume,device))
+                    start_list.append(ff)
+                print "mmmmmmMMMMMMM",start_list
+                server_list = []
+                ###########
+                # server_list
+                cmd_server = "nova list |grep SHUTOFF |awk '{print $2}'"
+                server_result = shell.shell_cmd(cmd_server)
+                for s in xrange(len(server_result)):
+                    s_l = server_result[s].split()[0]
+                    server_list.append(s_l)
+                print "TTTTTTTTTTTTTTTTTTT",server_list
+                 
+                for server_id,volume_id,device_path in start_list:
+                    if server_id in server_list:
+                        cmd_v = "nova volume-attach %s %s %s" % (server,volume,device_path)
+                        result = shell.shell_cmd(cmd_v)
+                        logging.debug(cmd_v)
+                        print "volume[%s] already detach... "     % volume_id
+                    else:
+                         logging.error("instance[%s] is not stop... "   %server_id)
+
+            except IOError:
+                logging.error("%s list file not found!!!" %volume_file)
+                raise
+            
+            
+        #######################
+        # volume_detach
+        ############################
+        def volume_detach():
+            volume_detach_id = []
+            server_detach_id = []
+            ##############
+            # server_detach_id
+            cmd_detach_server = "nova volume-list |grep in-use|awk '{print $12}'"
+            result_server = shell.shell_cmd(cmd_detach_server)
+            for vo_d in xrange(len(result_server)):
+                v_d = result_server[vo_d].split()[0]
+                server_detach_id.append(v_d)
+            #############
+            # volume_detach_id
+            cmd_detach_volume = "nova volume-list |grep in-use|awk '{print $2}'"
+            result_volume = shell.shell_cmd(cmd_detach_volume)
+            for so_d in xrange(len(result_volume)):
+                s_d = result_volume[so_d].split()[0]
+                volume_detach_id.append(s_d)
+            stop_list = []
+            for e in xrange(len(server_detach_id)):
+                fd =  tuple((server_detach_id[e],volume_detach_id[e]))
+                stop_list.append(fd)
+            #print "SSSSSSTTTTTTOOOOPPP:%s" %stop_list
+            #############
+            server_list = []
+            cmd_list = "nova list |grep SHUTOFF|awk '{print $2}'"
+            result_list = shell.shell_cmd(cmd_list)
+            for li in xrange(len(result_list)):
+                lst = result_list[li].split()[0]
+                server_list.append(lst)
+            #print "SSSSSSEEEEEEVVVVV:%s" % server_list
+            for server,volume in stop_list:
+                #print  "kkkkkkkKKKKKKKKKKKKKKKKKKKKKKKKK",server
+                if server in server_list:
+                    cmd = "nova volume-detach %s %s" %(server,volume)
+                    result = shell.shell_cmd(cmd)
+                    logging.debug("volume[%s] already detach... "     % volume)
+                    print "volume[%s] already detach... "     % volume
+                else:
+                    logging.error("instance[%s] is not stop... "   %server)
+	################################
+	if cmd == "list":
+		instance_list()
+	elif cmd == "stop":
+		instance_stop()
+	elif cmd == "volume_list":
+		volume_json()
+		volume_list()
+	elif  cmd == "volume_detach" :
+		volume_detach()
+	elif cmd == "volume_attach": 
+		volume_attach()
+	elif cmd == "start":
+		instance_start()
+	
+
+        
+        
+    def thread_do_work(self,tenant_name,cmd):
+        threadname = threading.currentThread().getName()
+        self.tenant_do_work(tenant_name,cmd)
+
+    def multithread_do_work(self,cmd):
+	print "#"*80, cmd
+        #global LEN_TENANT_NUM
+        global TENANT_NAME_LIST
+        #print "This is a tenant_name_list: %s" % TENANT_NAME_LIST
+        #num =  LEN_TENANT_NUM
+        threads = []
+        for tenant_name in TENANT_NAME_LIST:
+            threads.append(threading.Thread(target=self.thread_do_work(tenant_name,cmd),))
+        for t in threads:
+            t.setDaemon(1)
+        for t in threads:
+            t.start()
+            time.sleep(0.5)
+        for t in threads:
+            t.join()
+        #for item in threading.enumerate():
+        #   #print item
+        #   pass
+        #for item in threads:
+        #   #print item
+        #   pass
+
+
+
+
+
+=======
+
+def env_set_func(tenant_name):
+	# ['kyprivate', 'kycloudprod']
+	global TENANT_NAME_LIST 
+	rescoure = conf.tenant_rescoure()
+	global LEN_TENANT_NUM
+	# 10
+	len_rescore = len(rescoure)
+	for n in range(len(TENANT_NAME_LIST)):
+		if tenant_name == TENANT_NAME_LIST[n]:
+			suffix = n*5
+			url_key = rescoure[suffix][1]
+			tenant_id_key = rescoure[suffix+1][1]
+			user_name_key = rescoure[suffix+2][1]
+			password_key = rescoure[suffix+3][1]
+			tenant_name_key = rescoure[suffix+4][1]
+			env_dist = {
+				#'OS_AUTH_URL':'http://172.16.209.11:5000/v2.0',
+				'OS_AUTH_URL':url_key,
+				#'OS_TENANT_ID':'f1134680ff48420382bad868071bb115',
+				'OS_TENANT_ID':tenant_id_key,
+				#'OS_TENANT_NAME':'kycloudprod',
+				'OS_TENANT_NAME':tenant_name_key,
+				#'OS_USERNAME':'kycloudprod',
+				'OS_USERNAME':user_name_key,
+				#'OS_PASSWORD':'che001'
+				'OS_PASSWORD':password_key
+				}	
+
+			keys = env_dist.keys()
+			for i in keys:
+				value = env_dist[i]
+				env_set.set_env(i,value)
+			#return os.environ.data
+			return env_dist
+
+	
+
+class action_do_work:
+	def __init__(self):
+		pass
+	def tenant_do_work(self,tenant_name,cmd):
+		#tenant_name = 'kycloudprod'
+		list_dir = '/var/lib/platform-manager/'
+		cmd_date = "date  '+%Y-%m-%d'"
+		date = shell.shell_cmd(cmd_date)[0].split()[0]
+		list_file='list_'+tenant_name+'_'+date
+		if not os.path.exists(list_dir):
+    			os.makedirs(list_dir,0o755)
+			#os.chdir(list_dir)
+		#if not os.path.exists(list_file):
+			#os.mknod(list_file)
+		
+
+		os.chdir(home_path)
+
+		#TENANT_NAME_LIST =
+		env_set_func(tenant_name)
+		logging.info(os.environ.data)
+		#####################
+		# cmd_list 
+		######################
+		cmd_list = "nova list"
+		#######################
+		# cmd_volume_list
+		############################
+		cmd_volume_list = "nova volume-list"
+		######################
+		# cmd_stop  
+		#######################
+		server_running_id = []
+		server_cmd = "nova list |grep Running|awk '{print $2}'"
+		cmd_result = shell.shell_cmd(server_cmd)
+		#
+		for i in xrange(len(cmd_result)):
+                	lo = cmd_result[i].split()[0]
+                        server_running_id.append(lo)
+		#
+		#
+		cmd_stop = []
+		for server_stop in server_running_id:
+			cmd_lop = "nova stop %s" %server_stop
+			cmd_stop.append(cmd_lop)
+		logging.info("this is Server_runing_id: %s" % server_running_id)
+		print "this is Server_runing_id: %s" % server_running_id
+		##########################################
+		# cmd_start
+		#################################
+		server_shutdown_id = []
+		server_stop_cmd = " nova list|grep Shutdown |awk '{print $2}'"
+		cmd_result_stop = shell.shell_cmd(server_stop_cmd)
+		#
+		for j in xrange(len(cmd_result_stop)):
+			po = cmd_result_stop[j].split()[0]
+			server_shutdown_id.append(po)
+		
+		##
+		cmd_start = []
+		for server_start in server_shutdown_id:
+			cmd_pop = "nova start %s" %server_start
+			cmd_start.append(cmd_pop)
+		print "this is Server_shutdown_id: %s" % server_shutdown_id
+		####################################
+		# cmd_volume_attach
+		#######################################
+		cmd_volume_attach = []
+		server_volume_id = []
+		server_volume_cmd = "cinder list |grep in-use |awk '{print $(NF-1)}'"
+		cmd_result_server_volume = shell.shell_cmd(server_volume_cmd)
+		for x in xrange(len(cmd_result_server_volume)):
+			px = cmd_result_server_volume[x].split()[0]
+			server_volume_id.append(px)
+		volume_id = []
+		volume_cmd = "cinder list |grep in-use |awk '{print $2}'"
+		cmd_result_volume = shell.shell_cmd(volume_cmd)
+		for y in xrange(len(cmd_result_volume)):
+                        py = cmd_result_volume[y].split()[0]
+                        volume_id.append(py)
+		start_list = []
+		for z in xrange(len(server_volume_id)):
+			ff = tuple((server_volume_id[z],volume_id[z]))
+			start_list.append(ff)	
+		for server_volume,volume in start_list:
+			cmd_v = "nova volume-attach %s %s auto" % (server_volume,volume)
+			cmd_volume_attach.append(cmd_v)
+		print "This is server_volume_id: %s" % server_volume_id
+		logging.info("This is volume_id: %s" % volume_id)
+		##################################
+		# cmd_volume_detatch
+		###########################
+		cmd_volume_detatch = []
+		stop_list = []
+		for e in xrange(len(server_volume_id)):
+                        fd = tuple((server_volume_id[e],volume_id[e]))
+                        stop_list.append(fd)
+                for server_volume_01,volume_01 in stop_list:
+                        cmd_d = "nova volume-detach %s %s" % (server_volume_01,volume_01)
+                        cmd_volume_attach.append(cmd_d)
+		##############################################
+		content_list = []
+		cmd_name = {
+			"list":cmd_list,
+			"stop":cmd_stop,
+			"volume_list":cmd_volume_list,
+			"start":cmd_start,
+			"volume_attach":cmd_volume_attach,
+			"volume_detach":cmd_volume_detatch
+		}
+		print cmd_name
+		print cmd
+		cmd_list = []
+		cmd_result = cmd_name.get(cmd)
+		if isinstance(cmd_result,str):
+			cmd_list.insert(0,cmd_result)
+		if isinstance(cmd_result,list):
+			cmd_list = cmd_result
+		print "This is cmd_list: %s" % cmd_list
+		for cmd_l in cmd_list:
+			print "this is cmd_l:%s" % cmd_l
+			content = shell.shell_cmd(cmd_l)
+		#content = os.system('nova list')
+			#f = open(list_dir+list_file,'a')
+			f = open(list_dir+list_file,'w')
+			f.writelines(content)
+			f.close()
+			logging.info(content)
+			content_list.append(content)
+			print "This is content: %s" % content
+		return content_list
+	def thread_do_work(self,tenant_name,cmd):
+		threadname = threading.currentThread().getName()
+		self.tenant_do_work(tenant_name,cmd)
+	def multithread_do_work(self,cmd):
+		#global LEN_TENANT_NUM
+		global TENANT_NAME_LIST
+		#num =  LEN_TENANT_NUM
+		threads = []
+		for tenant_name in TENANT_NAME_LIST:
+			threads.append(threading.Thread(target=self.thread_do_work(tenant_name,cmd),))
+		for t in threads:
+			t.start()
+			time.sleep(0.1)
+		for t in threads:
+			t.join()
+		for item in threading.enumerate():
+			print item
+		for item in threads:
+			print item
+>>>>>>> 8c82c008222acb5c9c021e686b59b916124725d1

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script
+END
+zabbix_agent_linux2_6_23.amd64.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/zabbix_agent_linux2_6_23.amd64.tar.gz
+END
+networkRestart.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/networkRestart.sh
+END
+iptable.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/iptable.sh
+END
+CheckuserAndConfigZabbix.sh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/CheckuserAndConfigZabbix.sh
+END
+tc.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/tc.sh
+END
+common.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/common.sh
+END
+crontab.sh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/crontab.sh
+END
+zabbix_agent.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/zabbix_agent.tar.gz
+END
+tarjcf.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/yoyosyssvn/!svn/ver/85393/src/java/auto-test/newtools/yoyosys/script/tarjcf.sh
+END
+libfiu-0.91.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys/script/libfiu-0.91.tar.gz
+END

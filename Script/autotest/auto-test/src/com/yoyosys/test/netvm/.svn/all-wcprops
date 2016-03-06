@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/yoyosyssvn/!svn/ver/42212/src/java/auto-test/src/com/yoyosys/test/netvm
+END
+NetVMComm.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/yoyosyssvn/!svn/ver/42211/src/java/auto-test/src/com/yoyosys/test/netvm/NetVMComm.java
+END
+TestNetVMGetStats.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/yoyosyssvn/!svn/ver/42212/src/java/auto-test/src/com/yoyosys/test/netvm/TestNetVMGetStats.java
+END

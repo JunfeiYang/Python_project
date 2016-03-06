@@ -1,0 +1,23 @@
+dn: ou=Sudoers,dc=che001,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Sudoers
+
+dn: cn=defaults,ou=Sudoers,dc=che001,dc=com
+objectClass: top
+objectClass: sudoRole
+cn: defaults
+sudoOption: !visiblepw
+sudoOption: always_set_home
+sudoOption: env_reset
+sudoOption: requiretty
+
+dn: cn=andre,ou=Sudoers,dc=che001,dc=com
+objectClass: top
+objectClass: sudoRole
+cn: che001
+sudoCommand: ALL
+sudoHost: ALL
+sudoOption: !authenticate
+sudoRunAsUser: ALL
+sudoUser: andre

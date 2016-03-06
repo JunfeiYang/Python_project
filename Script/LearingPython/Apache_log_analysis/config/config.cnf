@@ -1,0 +1,33 @@
+# -*- coding:utf-8 -*-
+[global]
+localcalpath=/root/apache_log/data/
+
+[b2c]
+#apache日志路径
+weblogpath=/home/ecplog/
+#hosts=["ECS_B2C_WEB_0001","ECS_B2C_WEB_0001"]
+hosts=ECS_B2C_WEB_0001,ECS_B2C_WEB_0001
+
+[b2b]
+#apache日志路径
+weblogpath=/home/ecplog/
+
+
+
+#是否开启警告邮件 0:off 1:on
+[switch]
+warringswitch:0
+
+[mail]
+#邮件发送人
+from:188090277@qq.com
+ecs:188090277@qq.com
+#邮件服务器
+smtpserver:mail.qq.com
+#邮件服务器端口号
+smtpport:25
+#发件人
+smtpuser:188090277@qq.com
+#发件人密码
+smtppass:123123
+

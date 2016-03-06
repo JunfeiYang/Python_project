@@ -1,0 +1,17 @@
+dn: uid=rain,ou=People,dc=che001,dc=com
+uid: rain
+cn: rain
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword: {crypt}$6$c8C9sJ1y$YQwKXn5..df3z/9nIkYoVfFkcqHkg5SA3vIiee/w9Oyo8n1U5at25xSQyMWOCmqP.jmo9Qm9lEMMODyM4k2Qm0
+shadowLastChange: 16504
+shadowMin: 0
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+uidNumber: 502
+gidNumber: 502
+homeDirectory: /home/rain
+

@@ -1,0 +1,2 @@
+#!/bin/bash
+java -Djava.library.path=$LD_LIBRARY_PATH -classpath ../build/*:../build/classes:../conf:../lib/* com/yoyosys/test/TestClient localhost:1234 5678

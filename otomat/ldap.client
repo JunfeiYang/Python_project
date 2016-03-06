@@ -1,0 +1,2 @@
+authconfig --savebackup=auth.bak
+authconfig --enableldap --enableldapauth --enablemkhomedir --enableforcelegacy --disablesssd --disablesssdauth --ldapserver=172.172.0.7 --ldapbasedn="dc=che001,dc=com" --update

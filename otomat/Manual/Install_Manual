@@ -1,0 +1,25 @@
+#Preconditon 
+# Need to install Python Module
+os,time,sys,traceback,socket,threading,Queue,psutil
+
+
+#Install the rquired environment
+./Install server/client
+#centos
+client: yum -y install python-devel gcc;easy_install psutil 
+# If is the Service side than need to install the MySQL database
+1.ubuntu
+sudo apt-get install mysql-server 
+2.centos 
+sudo yum -y install mysql-server
+3.create user
+$ mysql -uroot -pyourpassword
+mysql> create database otomat;
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'otomat'@'%'  IDENTIFIED BY 'Yourpassword';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'otomat'@'localhost'  IDENTIFIED BY 'Yourpassword';
+mysql> quit
+$ mysql -uotomat -pyourpassword otomat < ../sql/Otomat.sql
+# Now you can start service when permise is installed successfully!
+
+# If is the client side than need the following steps
+

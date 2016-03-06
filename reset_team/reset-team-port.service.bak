@@ -1,0 +1,16 @@
+[Unit]
+Description=reset team port for switch
+After=syslog.target network.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/reset_team_port.pid
+ExecStart=/root/reset_team/reset_team_port.sh start
+ExecReload=/root/reset_team/reset_team_port.sh restart
+ExecStop=/root/reset_team/reset_team_port.sh stop
+PrivateTmp=true
+
+
+[Install]
+WantedBy=multi-user.target
+

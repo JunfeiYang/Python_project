@@ -1,0 +1,16 @@
+[Unit]
+Description=tranffic control deive for nic
+After=syslog.target network.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/traffic_control.pid
+ExecStart=/root/traffic_control/traffic_control.sh start
+ExecReload=/root/traffic_control/traffic_control.sh restart
+ExecStop=/root/traffic_control/traffic_control.sh stop
+PrivateTmp=true
+
+
+[Install]
+WantedBy=multi-user.target
+

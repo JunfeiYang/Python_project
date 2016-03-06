@@ -1,0 +1,14 @@
+dn: dc=che001,dc=com
+dc: che001 
+objectClass: top
+objectClass: domain
+
+dn: ou=People,dc=che001,dc=com
+ou: People
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Group,dc=che001,dc=com
+ou: Group
+objectClass: top
+objectClass: organizationalUnit

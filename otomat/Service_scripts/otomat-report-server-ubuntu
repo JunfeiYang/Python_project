@@ -1,0 +1,82 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:		otomat-reort-server
+# Required-Start:	$remote_fs $syslog
+# Required-Stop:	$remote_fs $syslog
+# Default-Start:	2 3 4 5
+# Default-Stop:	    0 1 6	
+# Short-Description:	Otomat server
+# Description: This script will start Otomat agent as specified
+#              in  and /etc/otomat/otomat.cnf
+### END INIT INFO
+
+set -e
+
+# /etc/init.d/otomat-agent-server: start and stop the OpenBSD "secure shell(tm)" daemon
+
+test $DEBIAN_SCRIPT_DEBUG && set -v -x
+umask 022
+
+
+. /lib/lsb/init-functions
+DAEMON=/usr/bin/otomat_report_server
+DESC="otomat agent server daemon(s)"
+CONFIG_DIR=/etc/otomat
+CONFIG_FILE=${CONFIG_DIR}/otomat.cnf
+PID=`ps aux |grep otomat_report_server |grep -v grep|awk '{print $2}'`
+test -x $DAEMON || exit 0
+test -d $CONFIG_DIR || exit 0
+test -f $CONFIG_FILE || exit 0
+
+
+export PATH="${PATH:+$PATH:}/usr/bin:/bin"
+                     
+
+case "$1" in
+  start)
+	log_daemon_msg "Starting Otomat  server" "otomat" || true
+        if [ ! -f /var/run/otomat_report_server.pid ];then
+           touch /var/run/otomat_report_server.pid
+	fi
+	/usr/bin/otomat_report_server  /etc/otomat/otomat.cnf & < /dev/null || STATUS=0
+        for i in $PID
+ 	do
+ 	   echo $i >> /var/run/otomat-report-server.pid
+	done
+	log_end_msg 0 || true
+	;;
+  stop)
+	log_daemon_msg "Stopping Otomat server" "otomat" || true
+	start-stop-daemon --stop --quiet --oknodo \
+        --pidfile /var/run/otomat_report_server.pid && rm -f /var/run/otomat_report_server.pid
+	log_end_msg 0 || true
+	;;
+
+  restart)
+	log_daemon_msg "Restarting Otomat-agent server" "otomat" || true
+	start-stop-daemon --stop --quiet --oknodo \
+	 --pidfile /var/run/otomat-report-server.pid && rm -f /var/run/otomat-report-server.pid  
+	# old daemon stopped
+	if [ ! -f /var/run/otomat-report-server.pid ];then
+	  touch /var/run/otomat-report-server.pid
+	fi
+	/usr/bin/otomat_report_server /etc/otomat/otomat.cnf &    < /dev/null || STATUS=0 
+        for i in $PID
+ 	do
+ 	   echo $i >> /var/run/otomat-report-server.pid
+	done
+	log_end_msg 0 || true
+	;;
+
+  status)
+	#check_for_upstart 1
+	status_of_proc -p /var/run/otomat-report-server.pid /usr/bin/otomat_report_server  otomat && exit 0 || exit $?
+	;;
+
+  *)
+	log_action_msg "Usage: service otomat-report-server {start|stop|restart|status}" || true
+	exit 1
+esac
+
+exit 0

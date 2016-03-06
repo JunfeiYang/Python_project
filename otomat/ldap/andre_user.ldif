@@ -1,0 +1,17 @@
+dn: uid=andre,ou=People,dc=che001,dc=com
+uid: andre
+cn: andre
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword: {crypt}$6$Ztwj1P3N$FZVnvP0xDH6tX5a6Tc6PIdlZk0TLHkrqjwPXFteIt8mYQ4vK4p0APVLnR1r3N5uqAhkNvwdMl6jZBMrADOQ0e1
+shadowLastChange: 16504
+shadowMin: 0
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+uidNumber: 503
+gidNumber: 503
+homeDirectory: /home/andre
+

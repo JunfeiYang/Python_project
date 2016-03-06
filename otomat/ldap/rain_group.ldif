@@ -1,0 +1,7 @@
+dn: cn=rain,ou=Group,dc=che001,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: rain
+userPassword: {crypt}x
+gidNumber: 502
+

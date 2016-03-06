@@ -1,0 +1,50 @@
+[server]
+host = 172.24.0.2
+port = 18888
+worker = 5
+log_dir = /var/log/otomat-server
+server_log = otomat-server.log
+report_log = otomat-report.log
+pdf_log = otomat-generate-pdf.log
+email_log = email.log
+
+[database]
+host = 127.0.0.1
+user = otomat
+password = otomat
+defaultdb = otomat
+
+[rrdtool]
+host = 172.24.0.23,172.24.0.27,172.172.0.8,172.172.0.9
+cpu = cpu.rrd
+mem = mem.rrd
+disk = disk.rrd
+network = nic.rrd
+login = login_user.rrd
+dir = /var/lib/otomat
+
+[graph]
+cpu = cpu.png
+mem = mem.png
+disk = disk.png
+network = nic.png
+login_user = login_user.png
+graph_dir = /var/lib/otomat-graph
+
+[pdf]
+pdf_dir = /var/lib/otomat-pdf
+pdf_daily = system_report_daily.pdf
+pdf_weekly = system_report_weekly.pdf
+pdf_monthly = system_report_monthly.pdf
+
+[client]
+host = 127.0.0.1
+log_dir = /var/log/otomat-agent
+log = otomat-agent.log
+port = 18889
+nic = eth0
+
+[email]
+local = local@gmail.com
+remote = yangjunfei@che001.com
+

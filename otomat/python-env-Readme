@@ -1,0 +1,18 @@
+# Python env
+#ubuntu
+ln -s otomat /usr/lib/python2.7/
+# centos
+ln -s otomat /usr/lib/python-2.6/site-packages
+
+###
+# ubuntu
+echo 'export PYTHONPATH="/usr/lib/python2.7/otomat":$PYTHONPATH' >> ~/.bashrc
+# centos
+echo 'export PYTHONPATH="/usr/lib/python-2.6/site-packages/otomat":$PYTHONPATH' >> ~/.bashrc
+
+# otomat server
+# centos
+sudo cp otomat-bin/otomat_bin /usr/bin/otomat
+sudo cp otomat-service/otomat-server
+service otomat-server start
+chkconfig otomat-server on

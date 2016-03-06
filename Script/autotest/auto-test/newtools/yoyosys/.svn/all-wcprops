@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/yoyosyssvn/!svn/ver/85368/src/java/auto-test/newtools/yoyosys
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/yoyosyssvn/!svn/ver/85260/src/java/auto-test/newtools/yoyosys/__init__.py
+END
+config.py.sample
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/yoyosyssvn/!svn/ver/85260/src/java/auto-test/newtools/yoyosys/config.py.sample
+END
+NetVMUtil.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/yoyosyssvn/!svn/ver/85260/src/java/auto-test/newtools/yoyosys/NetVMUtil.py
+END
+BitsflowTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/yoyosyssvn/!svn/ver/85410/src/java/auto-test/newtools/yoyosys/BitsflowTest.py
+END
+DataCellTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/yoyosyssvn/!svn/ver/85385/src/java/auto-test/newtools/yoyosys/DataCellTest.py
+END
+NetVMTest.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/yoyosyssvn/!svn/ver/85260/src/java/auto-test/newtools/yoyosys/NetVMTest.py
+END
+bitsflow.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/yoyosyssvn/!svn/ver/85260/src/java/auto-test/newtools/yoyosys/bitsflow.py
+END
