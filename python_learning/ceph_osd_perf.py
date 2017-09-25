@@ -9,19 +9,15 @@
 import  commands
 import  sys,json
 
-'''
+
 data = []
 cmd = commands.getstatusoutput('ceph osd perf')
 ceph_data = cmd[1].split(''.join('\n'))
 for i in range(len(ceph_data)):
     c = ceph_data[i].split()
     data.append(c)
-'''
-
-
-
-data = [ "id,fs_commit_latency,fs_apply_latency","1 51 5", "2 60 6","3 66 7"]
-
+    
+# data = [ "id,fs_commit_latency,fs_apply_latency","1 51 5", "2 60 6","3 66 7"]
 
 def osd_list():
     osdid = { "data" : []}
@@ -35,14 +31,10 @@ def osd_list():
 def osd_perf_fun(num, osd_perf_option):
     data_list = []
     for i in range(1,len(data)):
-
         if num == data[i][0] and osd_perf_option == "fs_commit_latency":
-#        if num == data[i][0]:
-            print  data[i],"(((())))))"
-            data_list.append(data[i])
-            print data_list
+            print  data[i][1]
         elif num == data[i][0] and osd_perf_option == "fs_apply_latency":
-            print data[3][2]
+            print data[i][2]
 
 def usage():
     usages='''
@@ -78,8 +70,6 @@ if __name__ == '__main__':
             print "The second parameter type is incorrect, enter int"
         if  osd_perf == "perf":
             num = str(num)
-            print "====type: %s" %type(num)
-            print "====type: %s" %type(osd_perf_option)
             osd_perf_fun(num,osd_perf_option)
         else:
             usage() 
