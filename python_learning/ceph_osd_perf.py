@@ -20,13 +20,13 @@ for i in range(len(ceph_data)):
 # data = [ "id,fs_commit_latency,fs_apply_latency","1 51 5", "2 60 6","3 66 7"]
 
 def osd_list():
-    osdid = { "data" : []}
-    for k, v in osdid.items():
-        for j in range(1,len(data)):
-            values = data[j][0]
-            v.append('{{#OSDID}": %s}' %values)
-    return (json.dumps(osdid))
-    
+    print "{\n"+"\"data\":["
+    for j in range(1,(len(data)-1)):
+        v = data[j][0]
+        print "{\"{#OSDID}\"}:\"%s\"}," %v
+    v_last = data[len(data)-1][0]
+    print "{\"{#OSDID}\"}:\"%s\"} ]" %v_last
+    print "}"
 
 def osd_perf_fun(num, osd_perf_option):
     data_list = []
