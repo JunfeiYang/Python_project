@@ -23,10 +23,10 @@ def osd_list():
     print "{\n"+"\"data\":["
     for j in range(1,(len(data)-1)):
         v = data[j][0]
-        print "{\"{#OSDID}\"}:\"%s\"}," %v
+        print "{\"{#OSDID}\":\"%s\"}, " %v
     v_last = data[len(data)-1][0]
-    print "{\"{#OSDID}\"}:\"%s\"} ]" %v_last
-    print "}"
+    print "{\"{#OSDID}\":\"%s\"} ] " %v_last
+    print "} \n"
 
 def osd_perf_fun(num, osd_perf_option):
     data_list = []
