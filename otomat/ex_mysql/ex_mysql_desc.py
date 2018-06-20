@@ -1,7 +1,7 @@
 
 import MySQLdb
 
-con = MySQLdb.connect('localhost','rain','che001','online')
+con = MySQLdb.connect('localhost','rain','xxx001','online')
 curl = con.cursor()
 curl.execute("select * from online_user")
 rows = curl.fetchall()
