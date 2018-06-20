@@ -3,7 +3,7 @@ This is Redme File .It's the main purpose the project of simple help.
 The following is utf-8 format in Chinese:
 
 ============
-　　主要针对壹号车OpenStack staging平台服务，现阶段主要包括两个功能，检测
+　　主要针对XXX OpenStack staging平台服务，现阶段主要包括两个功能，检测
 平台各个租户的虚拟机的状态，平台虚拟机的启停，运硬盘的挂载和卸载．
 一：平台虚拟机的启停（运硬盘的挂载和卸载）
 １．首先运行环境，通过加载相关环境变量实现的会有内部与公有之分且确保url可用．
@@ -27,21 +27,21 @@ The following is utf-8 format in Chinese:
     OS_TENANT_ID=4d550d27d9f64c7ba2580cad4c1cfa5f
     OS_TENANT_NAME=kyprivate
     OS_USERNAME=kyprivate
-    OS_PASSWORD=che001
+    OS_PASSWORD=xxx001
 
     [kycloudprod]
     OS_AUTH_URL=http://172.16.209.11:5000/v2.0
     OS_TENANT_ID=f1134680ff48420382bad868071bb115
     OS_TENANT_NAME=kycloudprod
     OS_USERNAME=kycloudprod
-    OS_PASSWORD=che001
+    OS_PASSWORD=xxx001
 
     [kyp2p]
     OS_AUTH_URL=http://172.16.209.11:5000/v2.0
     OS_TENANT_ID=ee6e6400058a4ba3a32526de4f66c9d3
     OS_TENANT_NAME="KY_P2P"
     OS_USERNAME=kyp2p
-    OS_PASSWORD=che001
+    OS_PASSWORD=xxx001
 4.在启动实例挂载运硬盘的同时，需要修改volume 文件的日期
     例如：
        list_openstack_volume-2015-07-31
