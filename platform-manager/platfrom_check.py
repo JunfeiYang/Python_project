@@ -54,7 +54,7 @@ def env_set_func(tenant_name):
                                 'OS_TENANT_NAME':tenant_name_key,
                                 #'OS_USERNAME':'kycloudprod',
                                 'OS_USERNAME':user_name_key,
-                                #'OS_PASSWORD':'che001'
+                                #'OS_PASSWORD':'xxx001'
                                 'OS_PASSWORD':password_key
                         }
                         keys = env_dist.keys()
