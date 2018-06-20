@@ -1,4 +1,4 @@
-dn: uid=rain,ou=People,dc=che001,dc=com
+dn: uid=rain,ou=People,dc=xxx001,dc=com
 uid: rain
 cn: admin
 objectClass: account
