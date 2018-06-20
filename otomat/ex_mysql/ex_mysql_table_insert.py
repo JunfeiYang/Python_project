@@ -1,7 +1,7 @@
 
 import MySQLdb
 
-con = MySQLdb.connect('localhost','rain','che001','online')
+con = MySQLdb.connect('localhost','rain','xxx001','online')
 with con:
 	curl = con.cursor()
 	curl.execute("CREATE TABLE IF NOT EXISTS author(Id INT PRIMARY KEY AUTO_INCREMENT, Name VARCHAR(25))")
