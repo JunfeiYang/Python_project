@@ -1,9 +1,9 @@
-dn: ou=Sudoers,dc=che001,dc=com
+dn: ou=Sudoers,dc=xxx001,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: Sudoers
 
-dn: cn=defaults,ou=Sudoers,dc=che001,dc=com
+dn: cn=defaults,ou=Sudoers,dc=xxx001,dc=com
 objectClass: top
 objectClass: sudoRole
 cn: defaults
@@ -12,7 +12,7 @@ sudoOption: always_set_home
 sudoOption: env_reset
 sudoOption: requiretty
 
-dn: cn=andre,ou=Sudoers,dc=che001,dc=com
+dn: cn=andre,ou=Sudoers,dc=xxx001,dc=com
 objectClass: top
 objectClass: sudoRole
 cn: che001
