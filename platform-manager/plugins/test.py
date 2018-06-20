@@ -8,7 +8,7 @@ env_dist = {
 	'OS_TENANT_ID':'f1134680ff48420382bad868071bb115',
 	'OS_TENANT_NAME':'kycloudprod',
 	'OS_USERNAME':'kycloudprod',
-	'OS_PASSWORD':'che001'
+	'OS_PASSWORD':'xxx001'
 	}
 value_list = ['OS_AUTH_URL','OS_TENANT_ID','OS_TENANT_NAME','OS_USERNAME','OS_PASSWORD']
 
