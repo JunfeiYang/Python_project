@@ -15,7 +15,7 @@ sudoOption: requiretty
 dn: cn=andre,ou=Sudoers,dc=xxx001,dc=com
 objectClass: top
 objectClass: sudoRole
-cn: che001
+cn: xxx001
 sudoCommand: ALL
 sudoHost: ALL
 sudoOption: !authenticate
