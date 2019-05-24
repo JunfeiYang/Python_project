@@ -14,7 +14,7 @@ sys.setdefaultencoding('utf8')
 
 jenkins_url = "http://172.16.36.252:8080" 
 username = "admin"
-password = "fsz&2018Y"
+password = "yjf&2018Y"
 
 server = jenkins.Jenkins(jenkins_url,username=username, password=password)
 
