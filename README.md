@@ -1,13 +1,14 @@
 # Python_project
 
 
-===
+==================================
+
 ![project](image/cat.JPEG)
 
-===
+=====================================
 ## 欢迎大家访问Pyhton Project 项目，通过这个项目让开源，共享离得我们更近  
 
-===
+==================================
 ### 1.create a new repository on the command line
 	echo "# repo" >> README.md
 	git init
