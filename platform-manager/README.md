@@ -1,13 +1,15 @@
-#######################
+####################### 
+
 This is Redme File .It's the main purpose the project of simple help.
 The following is utf-8 format in Chinese:
 
-============
+============ 
+
 　　主要针对XXX OpenStack staging平台服务，现阶段主要包括两个功能，检测
 平台各个租户的虚拟机的状态，平台虚拟机的启停，运硬盘的挂载和卸载．
 一：平台虚拟机的启停（运硬盘的挂载和卸载）
-１．首先运行环境，通过加载相关环境变量实现的会有内部与公有之分且确保url可用．
-２．进入platform-manager/
+ １．首先运行环境，通过加载相关环境变量实现的会有内部与公有之分且确保url可用．
+ ２．进入platform-manager/
     sudo python platfrom_manager.py 
     可以根据提示，操作
     sudo python platfrom_manager.py
@@ -20,7 +22,7 @@ The following is utf-8 format in Chinese:
     -h, --help            show this help message and exit
     -a start|stop, --action=start|stop
                         Stop or start virtual machine and mount cloud devices.
-3.在做１与２的事情之前，你必须配置plugins/platform_manager.conf
+ 3.在做１与２的事情之前，你必须配置plugins/platform_manager.conf
   格式：
     [kyprivate]
     OS_AUTH_URL=http://172.16.209.11:5000/v2.0
