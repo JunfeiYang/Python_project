@@ -16,16 +16,16 @@
 	git commit -m "first commit"
 	git remote add origin https://github.com/JunfeiYang/Python_project.git // https需要输入密码
 	git remote add origin git@github.com:JunfeiYang/Python_project.git // ssh keys 
-	git push -u origin python3
+	git push -u origin Python3
 ### 2.push an existing repository from the command line
 	git remote add origin https://github.com/JunfeiYang/Python_project.git
-	git push -u origin python3
+	git push -u origin Python3
 ### 3.This text is for set the github init
 	1.git config --global user.name "username"
 	2.git config --global user.email example@mail.com
 	3.git remote set-url origin git@github.com:username/Python_project
-###4. This text is for del file and dir the branch
-	首先不能直接在本地按del键删除，这样对远端没有任何影响，必须使用git rm filename 命令删除，
+### 4. This text is for del file and del dir the branch
+	注意：首先不能直接在本地按del键删除，这样对远端没有任何影响，必须使用git rm filename 命令删除，
 	其次，删除完之后，git commit -m “delete filename” 一下，最后 git push就OK了
 
 # 后记
