@@ -16,10 +16,10 @@
 	git commit -m "first commit"
 	git remote add origin https://github.com/JunfeiYang/Python_project.git // https需要输入密码
 	git remote add origin git@github.com:JunfeiYang/Python_project.git // ssh keys 
-	git push -u origin python3
+	git push -u origin master
 ### 2.push an existing repository from the command line
 	git remote add origin https://github.com/JunfeiYang/Python_project.git
-	git push -u origin python3
+	git push -u origin master
 ### 3.This text is for set the github init
 	1.git config --global user.name "username"
 	2.git config --global user.email example@mail.com
