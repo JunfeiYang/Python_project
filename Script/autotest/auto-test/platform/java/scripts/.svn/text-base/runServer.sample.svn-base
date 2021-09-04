@@ -1,2 +1,0 @@
-#!/bin/bash
-java -Djava.library.path=$LD_LIBRARY_PATH -classpath ../build/*:../build/classes:../conf:../../cpn:../lib/* com/yoyosys/autotest/platform/server/AutotestServer localhost:7001 5678

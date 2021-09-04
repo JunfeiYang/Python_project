@@ -1,2 +1,0 @@
-#!/bin/bash
-java -Djava.library.path=$LD_LIBRARY_PATH -classpath ../build/*:../build/classes:../conf:../lib/* com/yoyosys/test/TestServer 192.168.1.202:1234 5678
