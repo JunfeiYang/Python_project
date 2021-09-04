@@ -24,6 +24,9 @@
 	1.git config --global user.name "username"
 	2.git config --global user.email example@mail.com
 	3.git remote set-url origin git@github.com:username/Python_project
+###4. This text is for del file and dir the branch
+	首先不能直接在本地按del键删除，这样对远端没有任何影响，必须使用git rm filename 命令删除，
+	其次，删除完之后，git commit -m “delete filename” 一下，最后 git push就OK了
 
 # 后记
 

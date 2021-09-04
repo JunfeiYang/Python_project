@@ -1,7 +1,0 @@
-dn: cn=rain,ou=Group,dc=xxx001,dc=com
-objectClass: posixGroup
-objectClass: top
-cn: rain
-userPassword: {crypt}x
-gidNumber: 502
-
